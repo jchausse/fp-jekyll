@@ -1,20 +1,124 @@
-$grid-base : 24px;
-$max-width: 462px;
+/* Magic Numbers */
 
-body { background-color:#fff; font-family:"Noto Sans",serif; padding:24px; color:#333; font-size:15px;}
-header { background-color:#335544; height:$grid-base*3; margin:-24px -24px $grid-base -24px; text-align:center;}
-header.inner { max-width:$max-width; min-width:320px; text-align:left; margin:auto; padding:0 24px;}
-header img { height:$grid-base*2; margin-top:$grid-base/2}
+$point-base  : 8px;
+$grid-base   : $point-base*3;
+$max-width   : $point-base*100; // 
+$min-width   : $point-base*40; // 320 is smallest mobile screen worth supporting
+$main-margin : $point-base*3;
 
-a { color:#A14B41;}
-h1 { letter-spacing:0px; font-size:40px; font-weight:700; font-family:"Merriweather",sans-serif; line-height:$grid-base*2; color:#333; margin-bottom:$grid-base;}
-article time { font-size:15px; line-height:$grid-base; color:#335544; text-align:center; display:block; line-height:$grid-base;}
+/* Colors */
 
-p {margin:$grid-base 0; line-height:1.5em; line-height:$grid-base;}
-blockquote { border-left: solid 3px #335544; margin-left:20px; font-style:italic; background-color:#B9DAC8; padding:$grid-base;}
+$color-dark1 : #335544; // Green
+$color-dark2 : #584462; // Purple
+$color-dark3 : #A14B41; // Red
+$color-dark4 : #333333; // Off-black
+
+$color-light1 : #B9DAC8; // Green
+$color-light2 : #CBA8E0; // Purple
+$color-light3 : #DABCB9; // Red
+
+$color-white : #FFFFFF;
+
+/* Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+$body-font:    "Lato";
+$heading-font: "Merriweather";
+
+body { 
+	background-color: #fff; 
+	font-family: $body-font,serif; 
+	font-size: $point-base * 2;
+	color: $color-dark4; 
+}
+
+header.site-header {
+	background-color:$color-dark1;
+	padding: 0 $main-margin;
+}
+
+header.inner { 
+	max-width:$max-width; 
+	min-width:$min-width;
+	text-align:left; 
+	margin:auto;
+	height: $point-base * 12;
+	margin-bottom:$point-base * 3;
+}
+
+header img { height:$point-base*8; margin-top:$point-base*2}
+
+a { color:$color-dark3; text-decoration:none;}
+em { font-style: italic;}
+strong {font-weight: 700;}
+
+h1 { 
+	font-size: $point-base*4; 
+	font-weight:700; 
+	font-family:$heading-font,sans-serif; 
+	line-height:$point-base*5; 
+	color:#333; 
+	margin-bottom:$grid-base;
+}
+
+h2 { 
+	font-family:$heading-font;
+	font-size: $point-base*3;
+	line-height: $point-base*4;
+	font-weight:700;
+}
+
+#heroImage { 
+	display:block;
+	text-align:center; 
+	overflow:hidden; 
+	height:210px; 
+	background-color:#9ECDEB;  
+	margin-top: 0-$point-base * 3; // Override margin under header
+	margin-bottom: $point-base * 3;
+}
+
+#heroImage img { position:relative; left:100%; margin-left: -200%; width:100%; top:-30px; }
+@media only screen and (min-width: 400px) { #heroImage { height:300px; } #heroImage img { top:0px; } }
+@media only screen and (min-width: 500px) { #heroImage { height:300px; } #heroImage img { top:-50px; } }
+@media only screen and (min-width: 640px) { #heroImage { height:400px; } #heroImage img { top:-50px; } }
+@media only screen and (min-width: 800px) { #heroImage img { top:-100px; } }
+@media only screen and (min-width: 950px) { #heroImage img { top:-250px; } }
+@media only screen and (min-width: 1260px) { #heroImage img { top:-300px; } }
+@media only screen and (min-width: 1500px) { #heroImage img { top:-400px; } }
+
+article time { 
+	margin-bottom: $point-base *4; 
+	font-size:2*$point-base; 
+	line-height:$grid-base; 
+	color:#999; text-align:right; 
+	display:block; 
+	line-height:$grid-base;
+}
+
+p {margin:$grid-base 0; line-height:$point-base*3;}
+
+blockquote { 
+	color:$color-dark1; 
+	border-left: solid 3px $color-dark1; 
+	margin-left:$point-base * 2; 
+	background-color:$color-light1; 
+	padding:$point-base * 2 $point-base * 3;
+}
+
 blockquote *:first-child { margin-top: 0; }
 blockquote *:last-child { margin-bottom: 0; }
-article { max-width:$max-width; margin:0 auto; min-width:272px; } 
+
+.post-list li {margin-bottom:$point-base*3;}
+
+.page-content {  
+	max-width:$max-width; 
+	margin:0 auto; 
+	min-width:$min-width; 
+	padding: 0 $main-margin;
+} 
 
 .post-image { 
   width:100%; height:$grid-base*8;
@@ -23,3 +127,110 @@ article { max-width:$max-width; margin:0 auto; min-width:272px; }
   margin-bottom:$grid-base;
   display:block;
 }
+
+pre, xmp, plaintext, listing {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px 1em;
+    line-height:$point-base * 3;
+}
+
+footer {
+  	padding: $point-base*4 0;
+  	background-color: $color-dark1;
+  	color: #fff;
+  	display: block;
+  	text-align: center;
+  	line-height: $point-base * 4;
+  	clear: both;
+	margin-top: $point-base * 5;
+	letter-spacing: 0px;
+}
+
+footer a { color: $color-light2; }
+
+/* from the Minima theme */
+
+.pageNavigation {
+	line-height:$point-base*3;
+ 	font-size: $point-base * 2;
+ 	display: block;
+ 	width: auto;
+ 	overflow: hidden;
+}
+
+.pageNavigation .prev, .pageNavigation .next {
+ 	display: block;
+ 	width: 50%;
+ 	float: left;
+ 	margin: 1em 0;
+}
+
+.pageNavigation .next {
+	text-align: right;
+}
+
+.pageNavigation .heading {
+	line-height:$point-base * 2;
+	font-size:$point-base * 1.6;
+	font-weight:bold;
+}
+
+/** Code formatting */
+pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
+code { padding: 1px 5px; }
+pre { padding: 8px 12px; overflow-x: auto; }
+pre > code { border: 0; padding-right: 0; padding-left: 0; }
+
+/** Large screen embiggening */
+
+@media only screen and (min-width: $point-base * 95) { 
+	.page-content p {
+		font-size:3*$point-base; 
+		line-height:5*$point-base; 
+	} 
+	.page-content h1 {
+		font-size:5*$point-base;
+		line-height:6*$point-base;
+	}
+
+	header.site-header {
+		padding: 0 $main-margin*2;
+		margin-bottom:$point-base*4;
+	}
+
+	.page-content {  
+		padding: 0 $main-margin*2;
+	} 
+
+	.pageNavigation {
+		line-height:$point-base * 4;
+ 		font-size: $point-base * 3;
+	}
+
+	.pageNavigation .heading {
+		line-height:$point-base * 3;
+		font-size:$point-base * 2;
+	}
+
+	#heroImage { 
+		margin-bottom: $point-base * 5;
+	}
+
+	header.inner { 
+		height: $point-base * 16;
+	}
+
+	header img { 
+		height:$point-base*12; 
+		margin-top:$point-base*2;
+	}
+
+	#heroImage { 
+		margin-top: 0-$point-base * 4; // Override margin under header
+	}
+
+}
+
+

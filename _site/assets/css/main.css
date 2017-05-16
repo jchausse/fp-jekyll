@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,61 +47,120 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* Magic Numbers */
+/* Colors */
+/* Fonts */
 body {
   background-color: #fff;
-  font-family: "Noto Sans",serif;
-  padding: 24px;
-  color: #333;
-  font-size: 15px; }
+  font-family: "Lato", serif;
+  font-size: 16px;
+  color: #333333; }
 
-header {
+header.site-header {
   background-color: #335544;
-  height: 72px;
-  margin: -24px -24px 24px -24px;
-  text-align: center; }
+  padding: 0 24px; }
 
 header.inner {
-  max-width: 462px;
+  max-width: 800px;
   min-width: 320px;
   text-align: left;
   margin: auto;
-  padding: 0 24px; }
+  height: 96px;
+  margin-bottom: 24px; }
 
 header img {
-  height: 48px;
-  margin-top: 12px; }
+  height: 64px;
+  margin-top: 16px; }
 
 a {
-  color: #A14B41; }
+  color: #A14B41;
+  text-decoration: none; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 700; }
 
 h1 {
-  letter-spacing: 0px;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
-  font-family: "Merriweather",sans-serif;
-  line-height: 48px;
+  font-family: "Merriweather", sans-serif;
+  line-height: 40px;
   color: #333;
   margin-bottom: 24px; }
 
-article time {
-  font-size: 15px;
-  line-height: 24px;
-  color: #335544;
+h2 {
+  font-family: "Merriweather";
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700; }
+
+#heroImage {
+  display: block;
   text-align: center;
+  overflow: hidden;
+  height: 210px;
+  background-color: #9ECDEB;
+  margin-top: -24px;
+  margin-bottom: 24px; }
+
+#heroImage img {
+  position: relative;
+  left: 100%;
+  margin-left: -200%;
+  width: 100%;
+  top: -30px; }
+
+@media only screen and (min-width: 400px) {
+  #heroImage {
+    height: 300px; }
+
+  #heroImage img {
+    top: 0px; } }
+@media only screen and (min-width: 500px) {
+  #heroImage {
+    height: 300px; }
+
+  #heroImage img {
+    top: -50px; } }
+@media only screen and (min-width: 640px) {
+  #heroImage {
+    height: 400px; }
+
+  #heroImage img {
+    top: -50px; } }
+@media only screen and (min-width: 800px) {
+  #heroImage img {
+    top: -100px; } }
+@media only screen and (min-width: 950px) {
+  #heroImage img {
+    top: -250px; } }
+@media only screen and (min-width: 1260px) {
+  #heroImage img {
+    top: -300px; } }
+@media only screen and (min-width: 1500px) {
+  #heroImage img {
+    top: -400px; } }
+article time {
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999;
+  text-align: right;
   display: block;
   line-height: 24px; }
 
 p {
   margin: 24px 0;
-  line-height: 1.5em;
   line-height: 24px; }
 
 blockquote {
+  color: #335544;
   border-left: solid 3px #335544;
-  margin-left: 20px;
-  font-style: italic;
+  margin-left: 16px;
   background-color: #B9DAC8;
-  padding: 24px; }
+  padding: 16px 24px; }
 
 blockquote *:first-child {
   margin-top: 0; }
@@ -107,10 +168,14 @@ blockquote *:first-child {
 blockquote *:last-child {
   margin-bottom: 0; }
 
-article {
-  max-width: 462px;
+.post-list li {
+  margin-bottom: 24px; }
+
+.page-content {
+  max-width: 800px;
   margin: 0 auto;
-  min-width: 272px; }
+  min-width: 320px;
+  padding: 0 24px; }
 
 .post-image {
   width: 100%;
@@ -121,3 +186,301 @@ article {
   /* Center the image within the element */
   margin-bottom: 24px;
   display: block; }
+
+pre, xmp, plaintext, listing {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0px 1em;
+  line-height: 24px; }
+
+footer {
+  padding: 32px 0;
+  background-color: #335544;
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 32px;
+  clear: both;
+  margin-top: 40px;
+  letter-spacing: 0px; }
+
+footer a {
+  color: #CBA8E0; }
+
+/* from the Minima theme */
+.pageNavigation {
+  line-height: 24px;
+  font-size: 16px;
+  display: block;
+  width: auto;
+  overflow: hidden; }
+
+.pageNavigation .prev, .pageNavigation .next {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0; }
+
+.pageNavigation .next {
+  text-align: right; }
+
+.pageNavigation .heading {
+  line-height: 16px;
+  font-size: 12.8px;
+  font-weight: bold; }
+
+/** Code formatting */
+pre, code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+
+pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0; }
+
+/** Large screen embiggening */
+@media only screen and (min-width: 760px) {
+  .page-content p {
+    font-size: 24px;
+    line-height: 40px; }
+
+  .page-content h1 {
+    font-size: 40px;
+    line-height: 48px; }
+
+  header.site-header {
+    padding: 0 48px;
+    margin-bottom: 32px; }
+
+  .page-content {
+    padding: 0 48px; }
+
+  .pageNavigation {
+    line-height: 32px;
+    font-size: 24px; }
+
+  .pageNavigation .heading {
+    line-height: 24px;
+    font-size: 16px; }
+
+  #heroImage {
+    margin-bottom: 40px; }
+
+  header.inner {
+    height: 128px; }
+
+  header img {
+    height: 96px;
+    margin-top: 16px; }
+
+  #heroImage {
+    margin-top: -32px; } }
+/** Jekyll Syntax highlighting styles */
+.highlight {
+  background: #fff; }
+
+.highlighter-rouge .highlight {
+  background: #eef; }
+
+.highlight .c {
+  color: #998;
+  font-style: italic; }
+
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2; }
+
+.highlight .k {
+  font-weight: bold; }
+
+.highlight .o {
+  font-weight: bold; }
+
+.highlight .cm {
+  color: #998;
+  font-style: italic; }
+
+.highlight .cp {
+  color: #999;
+  font-weight: bold; }
+
+.highlight .c1 {
+  color: #998;
+  font-style: italic; }
+
+.highlight .cs {
+  color: #999;
+  font-weight: bold;
+  font-style: italic; }
+
+.highlight .gd {
+  color: #000;
+  background-color: #fdd; }
+
+.highlight .gd .x {
+  color: #000;
+  background-color: #faa; }
+
+.highlight .ge {
+  font-style: italic; }
+
+.highlight .gr {
+  color: #a00; }
+
+.highlight .gh {
+  color: #999; }
+
+.highlight .gi {
+  color: #000;
+  background-color: #dfd; }
+
+.highlight .gi .x {
+  color: #000;
+  background-color: #afa; }
+
+.highlight .go {
+  color: #888; }
+
+.highlight .gp {
+  color: #555; }
+
+.highlight .gs {
+  font-weight: bold; }
+
+.highlight .gu {
+  color: #aaa; }
+
+.highlight .gt {
+  color: #a00; }
+
+.highlight .kc {
+  font-weight: bold; }
+
+.highlight .kd {
+  font-weight: bold; }
+
+.highlight .kp {
+  font-weight: bold; }
+
+.highlight .kr {
+  font-weight: bold; }
+
+.highlight .kt {
+  color: #458;
+  font-weight: bold; }
+
+.highlight .m {
+  color: #099; }
+
+.highlight .s {
+  color: #d14; }
+
+.highlight .na {
+  color: #008080; }
+
+.highlight .nb {
+  color: #0086B3; }
+
+.highlight .nc {
+  color: #458;
+  font-weight: bold; }
+
+.highlight .no {
+  color: #008080; }
+
+.highlight .ni {
+  color: #800080; }
+
+.highlight .ne {
+  color: #900;
+  font-weight: bold; }
+
+.highlight .nf {
+  color: #900;
+  font-weight: bold; }
+
+.highlight .nn {
+  color: #555; }
+
+.highlight .nt {
+  color: #000080; }
+
+.highlight .nv {
+  color: #008080; }
+
+.highlight .ow {
+  font-weight: bold; }
+
+.highlight .w {
+  color: #bbb; }
+
+.highlight .mf {
+  color: #099; }
+
+.highlight .mh {
+  color: #099; }
+
+.highlight .mi {
+  color: #099; }
+
+.highlight .mo {
+  color: #099; }
+
+.highlight .sb {
+  color: #d14; }
+
+.highlight .sc {
+  color: #d14; }
+
+.highlight .sd {
+  color: #d14; }
+
+.highlight .s2 {
+  color: #d14; }
+
+.highlight .se {
+  color: #d14; }
+
+.highlight .sh {
+  color: #d14; }
+
+.highlight .si {
+  color: #d14; }
+
+.highlight .sx {
+  color: #d14; }
+
+.highlight .sr {
+  color: #009926; }
+
+.highlight .s1 {
+  color: #d14; }
+
+.highlight .ss {
+  color: #990073; }
+
+.highlight .bp {
+  color: #999; }
+
+.highlight .vc {
+  color: #008080; }
+
+.highlight .vg {
+  color: #008080; }
+
+.highlight .vi {
+  color: #008080; }
+
+.highlight .il {
+  color: #099; }
