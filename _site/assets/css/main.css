@@ -49,12 +49,28 @@ table {
 
 /* Magic Numbers */
 /* Colors */
-/* Fonts */
+/* Typography */
+h1, h2 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  color: #333333; }
+
 body {
   background-color: #fff;
-  font-family: "Lato", serif;
-  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
   color: #333333; }
+
+h1 {
+  font-size: 40px;
+  line-height: 56px;
+  color: #333333;
+  margin-bottom: 24px; }
+
+h2 {
+  font-size: 32px;
+  line-height: 48px; }
 
 header.site-header {
   background-color: #335544;
@@ -80,20 +96,6 @@ em {
   font-style: italic; }
 
 strong {
-  font-weight: 700; }
-
-h1 {
-  font-size: 32px;
-  font-weight: 700;
-  font-family: "Merriweather", sans-serif;
-  line-height: 40px;
-  color: #333;
-  margin-bottom: 24px; }
-
-h2 {
-  font-family: "Merriweather";
-  font-size: 24px;
-  line-height: 32px;
   font-weight: 700; }
 
 #heroImage {
@@ -152,8 +154,7 @@ article time {
   line-height: 24px; }
 
 p {
-  margin: 24px 0;
-  line-height: 24px; }
+  margin: 24px 0; }
 
 blockquote {
   color: #335544;
@@ -195,6 +196,7 @@ pre, xmp, plaintext, listing {
   line-height: 24px; }
 
 footer {
+  font-size: 16px;
   padding: 32px 0;
   background-color: #335544;
   color: #fff;
@@ -251,14 +253,6 @@ pre > code {
 
 /** Large screen embiggening */
 @media only screen and (min-width: 760px) {
-  .page-content p {
-    font-size: 24px;
-    line-height: 40px; }
-
-  .page-content h1 {
-    font-size: 40px;
-    line-height: 48px; }
-
   header.site-header {
     padding: 0 48px;
     margin-bottom: 32px; }

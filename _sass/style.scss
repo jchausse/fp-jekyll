@@ -19,7 +19,7 @@ $color-light3 : #DABCB9; // Red
 
 $color-white : #FFFFFF;
 
-/* Fonts */
+/* Typography */
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
@@ -27,11 +27,30 @@ $color-white : #FFFFFF;
 $body-font:    "Lato";
 $heading-font: "Merriweather";
 
+h1, h2 { 
+	font-family: $heading-font,sans-serif; 
+	font-weight: 700; 
+	color:$color-dark4;
+}
+
 body { 
 	background-color: #fff; 
-	font-family: $body-font,serif; 
-	font-size: $point-base * 2;
-	color: $color-dark4; 
+	font-family: $body-font, sans-serif; 
+	font-size:   20px;
+	line-height: $point-base * 4; 
+	color:       $color-dark4; 
+}
+
+h1 { 
+	font-size:     40px; 
+	line-height:   $point-base * 7; 
+	color:		   $color-dark4; 
+	margin-bottom: $point-base * 3;
+}
+
+h2 { 
+	font-size:   $point-base * 4;
+	line-height: $point-base * 6;
 }
 
 header.site-header {
@@ -54,21 +73,7 @@ a { color:$color-dark3; text-decoration:none;}
 em { font-style: italic;}
 strong {font-weight: 700;}
 
-h1 { 
-	font-size: $point-base*4; 
-	font-weight:700; 
-	font-family:$heading-font,sans-serif; 
-	line-height:$point-base*5; 
-	color:#333; 
-	margin-bottom:$grid-base;
-}
 
-h2 { 
-	font-family:$heading-font;
-	font-size: $point-base*3;
-	line-height: $point-base*4;
-	font-weight:700;
-}
 
 #heroImage { 
 	display:block;
@@ -98,7 +103,7 @@ article time {
 	line-height:$grid-base;
 }
 
-p {margin:$grid-base 0; line-height:$point-base*3;}
+p {margin:$grid-base 0;}
 
 blockquote { 
 	color:$color-dark1; 
@@ -137,6 +142,7 @@ pre, xmp, plaintext, listing {
 }
 
 footer {
+	font-size: $point-base * 2;
   	padding: $point-base*4 0;
   	background-color: $color-dark1;
   	color: #fff;
@@ -186,14 +192,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /** Large screen embiggening */
 
 @media only screen and (min-width: $point-base * 95) { 
-	.page-content p {
-		font-size:3*$point-base; 
-		line-height:5*$point-base; 
-	} 
-	.page-content h1 {
-		font-size:5*$point-base;
-		line-height:6*$point-base;
-	}
+
 
 	header.site-header {
 		padding: 0 $main-margin*2;
