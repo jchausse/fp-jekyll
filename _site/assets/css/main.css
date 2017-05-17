@@ -77,10 +77,14 @@ h2 {
 ul.post-list {
   margin-top: 16px; }
 
+.post-meta {
+  font-size: 14px;
+  line-height: 16px;
+  color: #335544; }
+
 a.post-link {
   display: block;
   font-weight: bold;
-  font-family: "Merriweather";
   font-size: 24px; }
 
 header.site-header {

@@ -59,10 +59,11 @@ h2 {
 
 /* Homepage Only */
 ul.post-list { margin-top: $point-base * 2; }
+
+.post-meta { font-size:14px; line-height:$point-base*2; color:$color-dark1;}
 a.post-link {
 	display:block;
 	font-weight:bold;
-	font-family:$heading-font;
 	font-size:24px;
 }
 
