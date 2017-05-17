@@ -111,6 +111,7 @@ strong {font-weight: 700;}
 #heroImage h1 { display:block; font-size:8vw; font-family:"Open Sans"; color:#fff; line-height:1.5; margin:0; padding:0;}
 #heroImage h2 { display:block; font-weight:normal; font-size:3.2vw; font-family:$heading-font; color:$color-accent1; line-height:1; margin:0; padding:0; }
 
+@media only screen and (max-width: 449px) { #heroImage h1 { font-size: 12vw; } #heroImage h2 { font-size: 4vw; }}
 @media only screen and (min-width: 450px) { #heroImage { height:250px; } }
 @media only screen and (min-width: 650px) { #heroImage { height:350px; } }
 @media only screen and (min-width: 900px) { #heroImage { height:400px; } }

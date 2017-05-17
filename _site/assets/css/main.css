@@ -150,6 +150,12 @@ strong {
   margin: 0;
   padding: 0; }
 
+@media only screen and (max-width: 449px) {
+  #heroImage h1 {
+    font-size: 12vw; }
+
+  #heroImage h2 {
+    font-size: 4vw; } }
 @media only screen and (min-width: 450px) {
   #heroImage {
     height: 250px; } }
