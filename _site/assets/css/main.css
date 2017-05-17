@@ -4,6 +4,7 @@
 */
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -70,22 +71,36 @@ h1 {
 
 h2 {
   font-size: 32px;
-  line-height: 48px; }
+  line-height: 40px; }
+
+/* Homepage Only */
+ul.post-list {
+  margin-top: 16px; }
+
+a.post-link {
+  display: block;
+  font-weight: bold;
+  font-family: "Merriweather";
+  font-size: 24px; }
 
 header.site-header {
   background-color: #335544;
-  padding: 0 24px; }
+  padding: 0 24px;
+  margin-bottom: 32px; }
 
 header.inner {
   max-width: 800px;
   min-width: 320px;
   text-align: left;
   margin: auto;
-  height: 96px;
-  margin-bottom: 24px; }
+  height: 48px;
+  color: #fff; }
+
+header.inner a {
+  color: #fff; }
 
 header img {
-  height: 64px;
+  height: 48px;
   margin-top: 16px; }
 
 a {
@@ -99,57 +114,56 @@ strong {
   font-weight: 700; }
 
 #heroImage {
-  display: block;
-  text-align: center;
-  overflow: hidden;
-  height: 210px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 150px;
   background-color: #9ECDEB;
-  margin-top: -24px;
-  margin-bottom: 24px; }
+  margin-top: -32px;
+  /* Override in under header */
+  margin-bottom: 24px;
+  background-image: url("/assets/img/jet.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-#heroImage img {
-  position: relative;
-  left: 100%;
-  margin-left: -200%;
-  width: 100%;
-  top: -30px; }
+#heroImage .content {
+  display: block;
+  text-align: center; }
 
-@media only screen and (min-width: 400px) {
+#heroImage h1 {
+  display: block;
+  font-size: 8vw;
+  font-family: "Open Sans";
+  color: #fff;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0; }
+
+#heroImage h2 {
+  display: block;
+  font-weight: normal;
+  font-size: 3.2vw;
+  font-family: "Merriweather";
+  color: #FFF891;
+  line-height: 1;
+  margin: 0;
+  padding: 0; }
+
+@media only screen and (min-width: 450px) {
   #heroImage {
-    height: 300px; }
-
-  #heroImage img {
-    top: 0px; } }
-@media only screen and (min-width: 500px) {
+    height: 250px; } }
+@media only screen and (min-width: 650px) {
   #heroImage {
-    height: 300px; }
-
-  #heroImage img {
-    top: -50px; } }
-@media only screen and (min-width: 640px) {
+    height: 350px; } }
+@media only screen and (min-width: 900px) {
   #heroImage {
-    height: 400px; }
-
-  #heroImage img {
-    top: -50px; } }
-@media only screen and (min-width: 800px) {
-  #heroImage img {
-    top: -100px; } }
-@media only screen and (min-width: 950px) {
-  #heroImage img {
-    top: -250px; } }
-@media only screen and (min-width: 1260px) {
-  #heroImage img {
-    top: -300px; } }
-@media only screen and (min-width: 1500px) {
-  #heroImage img {
-    top: -400px; } }
+    height: 400px; } }
 article time {
   margin-bottom: 32px;
   font-size: 16px;
   line-height: 24px;
-  color: #999;
-  text-align: right;
+  color: #335544;
   display: block;
   line-height: 24px; }
 
@@ -198,14 +212,13 @@ pre, xmp, plaintext, listing {
 footer {
   font-size: 16px;
   padding: 32px 0;
-  background-color: #335544;
+  background-color: #333333;
   color: #fff;
   display: block;
   text-align: center;
   line-height: 32px;
   clear: both;
-  margin-top: 40px;
-  letter-spacing: 0px; }
+  margin-top: 40px; }
 
 footer a {
   color: #CBA8E0; }
@@ -269,17 +282,7 @@ pre > code {
     font-size: 16px; }
 
   #heroImage {
-    margin-bottom: 40px; }
-
-  header.inner {
-    height: 128px; }
-
-  header img {
-    height: 96px;
-    margin-top: 16px; }
-
-  #heroImage {
-    margin-top: -32px; } }
+    margin-bottom: 40px; } }
 /** Jekyll Syntax highlighting styles */
 .highlight {
   background: #fff; }

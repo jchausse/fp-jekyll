@@ -8,8 +8,8 @@ layout: default
     {{ content }}
 
     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        ~ Published: {{ page.date | date: date_format }}
+        {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
+        {{ page.date | date: date_format }}
     </time>
 
     <div class="pageNavigation">
@@ -18,7 +18,7 @@ layout: default
   	{% endif %}
   	{% if page.next.url %}
     <div class="next"><div class="heading ">Newer:</div><a href="{{page.next.url}}">{{page.next.title}}</a></div>
- 	 {% endif %}
+ 	{% endif %}
 	</div>
 
 </article>
