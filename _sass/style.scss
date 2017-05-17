@@ -25,11 +25,11 @@ $color-white : #FFFFFF;
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 $body-font:    "Lato";
-$heading-font: "Merriweather";
+$heading-font: "Merriweather:400,700";
 
 h1, h2 { 
 	font-family: $heading-font,sans-serif; 
-	font-weight: 700; 
+	font-weight: normal;
 	color:$color-dark4;
 }
 
