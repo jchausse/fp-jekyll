@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 @import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,8 +51,8 @@ table {
 /* Colors */
 /* Typography */
 h1, h2 {
-  font-family: "Merriweather:400,700", sans-serif;
-  font-weight: normal;
+  font-family: "Merriweather", sans-serif;
+  font-weight: bold;
   color: #333333; }
 
 body {

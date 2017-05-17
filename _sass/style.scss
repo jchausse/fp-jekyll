@@ -22,14 +22,14 @@ $color-white : #FFFFFF;
 /* Typography */
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 
 $body-font:    "Lato";
-$heading-font: "Merriweather:400,700";
+$heading-font: "Merriweather";
 
 h1, h2 { 
 	font-family: $heading-font,sans-serif; 
-	font-weight: normal;
+	font-weight: bold;
 	color:$color-dark4;
 }
 
