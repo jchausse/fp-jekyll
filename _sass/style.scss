@@ -89,39 +89,6 @@ a { color:$color-dark3; text-decoration:none;}
 em { font-style: italic;}
 strong {font-weight: 700;}
 
-#heroImage { 
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size:100%;
-	height:225px;
-	background-color:#9ECDEB;  
-	margin-bottom: $point-base * 3;
-	background-image: url('/assets/img/jet.jpg');
-
-	display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#heroImage .logo {
-	position:absolute;
-	left:$main-margin;
-	top: $point-base*2;
-	height:$point-base*4;
-}
-#heroImage .content {
-	display:block;
-	text-align:center;
-}
-
-#heroImage h1 { display:block; font-size:8vw; font-family:"Open Sans"; color:#fff; line-height:1.5; margin:0; padding:0;}
-#heroImage h2 { display:block; font-weight:normal; font-size:3.2vw; font-family:$heading-font; color:$color-accent1; line-height:1; margin:0; padding:0; }
-
-@media only screen and (max-width: 449px) { #heroImage h1 { font-size: 12vw; } #heroImage h2 { font-size: 4vw; }}
-@media only screen and (min-width: 450px) { #heroImage { height:250px; } #heroImage .logo { height:$point-base * 6}}
-@media only screen and (min-width: 650px) { #heroImage { height:350px; } }
-@media only screen and (min-width: 900px) { #heroImage { height:400px; } }
-
 article time { 
 	margin-bottom: $point-base *4; 
 	font-size:2*$point-base; 
@@ -144,8 +111,6 @@ blockquote {
 blockquote *:first-child { margin-top: 0; }
 blockquote *:last-child { margin-bottom: 0; }
 
-.post-list li {margin-bottom:$point-base*3;}
-
 .page-content {  
 	max-width:$max-width; 
 	margin:0 auto; 
@@ -159,14 +124,6 @@ blockquote *:last-child { margin-bottom: 0; }
   object-position: center; /* Center the image within the element */
   margin-bottom:$grid-base;
   display:block;
-}
-
-pre, xmp, plaintext, listing {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1em 0px 1em;
-    line-height:$point-base * 3;
 }
 
 footer {
@@ -215,6 +172,14 @@ pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; back
 code { padding: 1px 5px; }
 pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
+
+pre, xmp, plaintext, listing {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px 1em;
+    line-height:$point-base * 3;
+}
 
 /** Large screen embiggening */
 

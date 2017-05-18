@@ -1,0 +1,34 @@
+#heroImage { 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:100%;
+	height:225px;
+	background-color:#9ECDEB;  
+	margin-bottom: $point-base * 3;
+	background-image: url('/assets/img/jet.jpg');
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroImage .logo {
+	position:absolute;
+	left:$main-margin;
+	top: $point-base*2;
+	height:$point-base*4;
+}
+#heroImage .content {
+	display:block;
+	text-align:center;
+}
+
+#heroImage h1 { display:block; font-size:8vw; font-family:"Open Sans"; color:#fff; line-height:1.5; margin:0; padding:0;}
+#heroImage h2 { display:block; font-weight:normal; font-size:3.2vw; font-family:$heading-font; color:$color-accent1; line-height:1; margin:0; padding:0; }
+
+.post-list li {margin-bottom:$point-base*3;}
+
+@media only screen and (max-width: 449px) { #heroImage h1 { font-size: 12vw; } #heroImage h2 { font-size: 4.7vw; }}
+@media only screen and (min-width: 450px) { #heroImage { height:250px; } #heroImage .logo { height:$point-base * 6}}
+@media only screen and (min-width: 650px) { #heroImage { height:350px; } }
+@media only screen and (min-width: 900px) { #heroImage { height:400px; } }
