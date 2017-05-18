@@ -97,14 +97,14 @@ header.inner {
   min-width: 320px;
   text-align: left;
   margin: auto;
-  height: 48px;
+  height: 32px;
   color: #fff; }
 
 header.inner a {
   color: #fff; }
 
 header img {
-  height: 48px;
+  height: 32px;
   margin-top: 16px; }
 
 a {
@@ -121,15 +121,19 @@ strong {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 150px;
+  height: 225px;
   background-color: #9ECDEB;
-  margin-top: -32px;
-  /* Override in under header */
   margin-bottom: 24px;
   background-image: url("/assets/img/jet.jpg");
   display: flex;
   align-items: center;
   justify-content: center; }
+
+#heroImage .logo {
+  position: absolute;
+  left: 24px;
+  top: 16px;
+  height: 32px; }
 
 #heroImage .content {
   display: block;
@@ -162,7 +166,10 @@ strong {
     font-size: 4vw; } }
 @media only screen and (min-width: 450px) {
   #heroImage {
-    height: 250px; } }
+    height: 250px; }
+
+  #heroImage .logo {
+    height: 48px; } }
 @media only screen and (min-width: 650px) {
   #heroImage {
     height: 350px; } }
@@ -278,7 +285,14 @@ pre > code {
 @media only screen and (min-width: 760px) {
   header.site-header {
     padding: 0 48px;
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    height: 80px; }
+
+  #heroImage .logo {
+    left: 48px; }
+
+  header.site-header img {
+    height: 48px; }
 
   .page-content {
     padding: 0 48px; }
