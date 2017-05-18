@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 html, body, div, span, applet, object, iframe,
@@ -132,8 +132,10 @@ blockquote {
   color: #335544;
   border-left: solid 3px #335544;
   margin-left: 16px;
+  margin-right: 16px;
   background-color: #B9DAC8;
-  padding: 16px 24px; }
+  padding: 16px 24px;
+  font-style: italic; }
 
 blockquote *:first-child {
   margin-top: 0; }

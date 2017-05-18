@@ -24,7 +24,7 @@ $color-white : #FFFFFF;
 
 /* Typography */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
@@ -104,8 +104,10 @@ blockquote {
 	color:$color-dark1; 
 	border-left: solid 3px $color-dark1; 
 	margin-left:$point-base * 2; 
+	margin-right:$point-base * 2;
 	background-color:$color-light1; 
 	padding:$point-base * 2 $point-base * 3;
+	font-style:italic;
 }
 
 blockquote *:first-child { margin-top: 0; }
