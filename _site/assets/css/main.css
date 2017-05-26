@@ -123,10 +123,19 @@ article time {
   line-height: 24px;
   color: #335544;
   display: block;
-  line-height: 24px; }
+  line-height: 24px;
+  font-family: "Merriweather"; }
 
 p {
   margin: 24px 0; }
+
+ol {
+  list-style-position: outside;
+  margin-left: 32px;
+  text-indent: 16px; }
+
+ol li {
+  list-style-type: decimal; }
 
 blockquote {
   color: #335544;

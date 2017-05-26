@@ -96,9 +96,13 @@ article time {
 	color:$color-dark1;
 	display:block; 
 	line-height:$grid-base;
+	font-family:$heading-font;
 }
 
 p {margin:$grid-base 0;}
+
+ol { list-style-position: outside; margin-left:$point-base*4; text-indent:$point-base*2; }
+ol li { list-style-type:decimal; }
 
 blockquote { 
 	color:$color-dark1; 
