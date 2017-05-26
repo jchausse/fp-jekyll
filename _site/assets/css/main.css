@@ -289,7 +289,8 @@ pre, xmp, plaintext, listing {
   padding: 0; }
 
 .post-list li {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  font-family: "Merriweather"; }
 
 @media only screen and (max-width: 449px) {
   #heroImage h1 {
