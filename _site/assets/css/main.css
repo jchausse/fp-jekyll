@@ -1,10 +1,52 @@
+/* Magic Numbers */
+/* Colors */
+/* Web fonts */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* TYPOGRAPHY */
+/* Sizes */
+/* Fonts */
+.size-small {
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.size-medium {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.size-large {
+  font-size: 30px;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.size-xlarge {
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.size-xxlarge {
+  font-size: 60px;
+  line-height: 72px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.font-body {
+  font-family: "Lato"; }
+
+.font-heading {
+  font-family: "Merriweather"; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,9 +90,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Magic Numbers */
-/* Colors */
-/* Typography */
 h1, h2 {
   font-family: "Merriweather", sans-serif;
   font-weight: bold;
@@ -60,26 +99,26 @@ body {
   background-color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 96px;
   color: #333333; }
 
 h1 {
   font-size: 44px;
-  line-height: 56px;
+  line-height: 168px;
   color: #333333;
-  margin-bottom: 24px; }
+  margin-bottom: 72px; }
 
 h2 {
-  font-size: 32px;
-  line-height: 40px; }
+  font-size: 96px;
+  line-height: 120px; }
 
 /* Homepage Only */
 ul.post-list {
-  margin-top: 16px; }
+  margin-top: 48px; }
 
 .post-meta {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 48px;
   color: #335544; }
 
 a.post-link {
@@ -89,23 +128,23 @@ a.post-link {
 
 header.site-header {
   background-color: #335544;
-  padding: 0 24px;
-  margin-bottom: 32px; }
+  padding: 0 72px;
+  margin-bottom: 96px; }
 
 header.inner {
-  max-width: 800px;
-  min-width: 320px;
+  max-width: 2400px;
+  min-width: 960px;
   text-align: left;
   margin: auto;
-  height: 32px;
+  height: 96px;
   color: #fff; }
 
 header.inner a {
   color: #fff; }
 
 header img {
-  height: 32px;
-  margin-top: 16px; }
+  height: 96px;
+  margin-top: 48px; }
 
 a {
   color: #A14B41;
@@ -118,21 +157,21 @@ strong {
   font-weight: 700; }
 
 article time {
-  margin-bottom: 32px;
-  font-size: 16px;
-  line-height: 24px;
+  margin-bottom: 96px;
+  font-size: 48px;
+  line-height: 72px;
   color: #335544;
   display: block;
-  line-height: 24px;
+  line-height: 72px;
   font-family: "Merriweather"; }
 
 p {
-  margin: 24px 0; }
+  margin: 72px 0; }
 
 ol {
   list-style-position: outside;
-  margin-left: 32px;
-  text-indent: 16px; }
+  margin-left: 96px;
+  text-indent: 48px; }
 
 ol li {
   list-style-type: decimal; }
@@ -140,10 +179,10 @@ ol li {
 blockquote {
   color: #335544;
   border-left: solid 3px #335544;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 48px;
+  margin-right: 48px;
   background-color: #B9DAC8;
-  padding: 16px 24px;
+  padding: 48px 72px;
   font-style: italic; }
 
 blockquote *:first-child {
@@ -153,39 +192,38 @@ blockquote *:last-child {
   margin-bottom: 0; }
 
 .page-content {
-  max-width: 800px;
+  max-width: 2400px;
   margin: 0 auto;
-  min-width: 320px;
-  padding: 0 24px; }
+  min-width: 960px;
+  padding: 144px 72px; }
 
 .post-image {
   width: 100%;
-  height: 192px;
+  height: 576px;
   object-fit: cover;
   /* Do not scale the image */
   object-position: center;
   /* Center the image within the element */
-  margin-bottom: 24px;
+  margin-bottom: 72px;
   display: block; }
 
 footer {
-  font-size: 16px;
-  padding: 32px 0;
+  font-size: 48px;
+  padding: 96px 0;
   background-color: #333333;
   color: #fff;
   display: block;
   text-align: center;
-  line-height: 32px;
-  clear: both;
-  margin-top: 40px; }
+  line-height: 96px;
+  clear: both; }
 
 footer a {
   color: #CBA8E0; }
 
 /* from the Minima theme */
 .pageNavigation {
-  line-height: 24px;
-  font-size: 16px;
+  line-height: 72px;
+  font-size: 48px;
   display: block;
   width: auto;
   overflow: hidden; }
@@ -200,8 +238,8 @@ footer a {
   text-align: right; }
 
 .pageNavigation .heading {
-  line-height: 16px;
-  font-size: 12.8px;
+  line-height: 48px;
+  font-size: 38.4px;
   font-weight: bold; }
 
 /** Code formatting */
@@ -228,41 +266,40 @@ pre, xmp, plaintext, listing {
   font-family: monospace;
   white-space: pre;
   margin: 1em 0px 1em;
-  line-height: 24px; }
+  line-height: 72px; }
 
 /** Large screen embiggening */
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 2280px) {
   header.site-header {
-    padding: 0 48px;
-    margin-bottom: 32px;
-    height: 80px; }
+    padding: 0 144px;
+    margin-bottom: 96px;
+    height: 240px; }
 
   #heroImage .logo {
-    left: 48px; }
+    left: 144px; }
 
   header.site-header img {
-    height: 48px; }
+    height: 144px; }
 
   .page-content {
-    padding: 0 48px; }
+    padding: 0 144px; }
 
   .pageNavigation {
-    line-height: 32px;
-    font-size: 24px; }
+    line-height: 96px;
+    font-size: 72px; }
 
   .pageNavigation .heading {
-    line-height: 24px;
-    font-size: 16px; }
+    line-height: 72px;
+    font-size: 48px; }
 
   #heroImage {
-    margin-bottom: 40px; } }
+    margin-bottom: 120px; } }
 #heroImage {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
   height: 225px;
-  background-color: #5A806B;
-  margin-bottom: 24px;
+  background-color: #335544;
   background-image: url("/assets/img/jet.jpg");
   display: flex;
   align-items: center;
@@ -270,9 +307,9 @@ pre, xmp, plaintext, listing {
 
 #heroImage .logo {
   position: absolute;
-  left: 24px;
-  top: 16px;
-  height: 32px; }
+  left: 72px;
+  top: 48px;
+  height: 96px; }
 
 #heroImage .content {
   display: block;
@@ -298,8 +335,36 @@ pre, xmp, plaintext, listing {
   padding: 0; }
 
 .post-list li {
-  margin-bottom: 24px;
+  margin-bottom: 72px;
   font-family: "Merriweather"; }
+
+.post-list li:last-child {
+  margin-bottom: 0; }
+
+#about {
+  background-color: #584462;
+  padding: 96px 0; }
+
+#about .content {
+  max-width: 2400px;
+  margin: 0 auto;
+  min-width: 960px;
+  padding: 0 72px;
+  color: #CBA8E0;
+  font-size: 48px;
+  line-height: 72px; }
+
+@media only screen and (min-width: 2280px) {
+  #about .content {
+    padding: 0 144px; } }
+#about h1 {
+  color: #CBA8E0;
+  font-size: 72px; }
+
+img.profile-image {
+  float: right;
+  width: 150px;
+  margin: 0 0 24px 24px; }
 
 @media only screen and (max-width: 449px) {
   #heroImage h1 {
@@ -312,7 +377,7 @@ pre, xmp, plaintext, listing {
     height: 250px; }
 
   #heroImage .logo {
-    height: 48px; } }
+    height: 144px; } }
 @media only screen and (min-width: 650px) {
   #heroImage {
     height: 350px; } }

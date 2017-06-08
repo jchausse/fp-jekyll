@@ -1,0 +1,55 @@
+/* Magic Numbers */
+
+$point-base  : 24px;
+$grid-base   : $point-base*3;
+$max-width   : $point-base*100; // 
+$min-width   : $point-base*40; // 320 is smallest mobile screen worth supporting
+$main-margin : $point-base*3;
+
+/* Colors */
+
+$color-dark1 : #335544; // Green
+$color-dark2 : #584462; // Purple
+$color-dark3 : #A14B41; // Red
+$color-dark4 : #333333; // Off-black
+
+$color-light1 : #B9DAC8; // Green
+$color-light2 : #CBA8E0; // Purple
+$color-light3 : #DABCB9; // Red
+
+$color-accent1 : #FFF891; // Yellow
+$color-accent2 : #B9DAC8; // Green
+
+$color-white : #FFFFFF;
+
+/* Web fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+$body-font:    "Lato";
+$heading-font: "Merriweather";
+
+/* TYPOGRAPHY */
+
+/* Sizes */
+
+@mixin size-tiny    { font-size: $point-base * 0.5   ; line-height: $point-base; margin-top: $point-base; margin-bottom: $point-base; }
+@mixin size-small   { font-size: $point-base * (2/3) ; line-height: $point-base; margin-top: $point-base; margin-bottom: $point-base; }
+@mixin size-large   { font-size: $point-base * 1.25  ; line-height: $point-base * 2; margin-top: $point-base; margin-bottom: $point-base; }
+@mixin size-xlarge  { font-size: $point-base * 1.5   ; line-height: $point-base * 2; margin-top: $point-base; margin-bottom: $point-base; }
+@mixin size-xxlarge { font-size: $point-base * 2.5   ; line-height: $point-base * 3; margin-top: $point-base; margin-bottom: $point-base; }
+
+/* Fonts */
+
+@mixin font-body    { font-family: "Lato" }
+@mixin font-heading { font-family: "Merriweather" }
+
+.size-small   { @include size-tiny; }
+.size-medium  { @include size-small; }
+.size-large   { @include size-large; }
+.size-xlarge  { @include size-xlarge; }
+.size-xxlarge { @include size-xxlarge; }
+
+.font-body    { @include font-body; }
+.font-heading { @include font-heading; }
