@@ -3,55 +3,74 @@
 
   {% include head.html %}
 
+  <!--<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jeff Chausse | UX Designer</title>
+  <meta name="description" content="Jeff Chausse is a Boston-area User Experience designer with over 15 years experience designing website and mobile apps">
+
+  <link rel="stylesheet" href="assets/css/screen.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="canonical" href="/">
+
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
+  </head>-->
+
   <body>
 
-    <div id="heroImage">
-      <img class="logo" src="/assets/img/logo.png">
-      <div class="content">
-        <h1 class="heroHeading">Five Planes</h1>
-        <h2>Jeff Chausse on UX Design</h2>
-      </div>
-    </div> 
+    {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+    <section class="band neutral1 home-intro">
 
-        <div class="mainContent home">
+    <h1>User experience design, with experience.</h1>
 
-          <h2 class="page-heading">Latest Writing</h2>
-          
-          {{ content }}
+      <p><img src="assets/img/jeff.jpg" class="profile-image">I've been creating web sites and mobile apps for almost 20 years — first as a developer, and now as a user experience designer.</p>
 
-          <ul class="post-list">
-            {% for post in site.posts %}
-              <li>
-                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-              </li>
-            {% endfor %}
-          </ul>
+      <p>I’ve worked in a variety of environments, including agencies, startups, and video game studios. <strong>I've seen things</strong>.</p>
 
-        </div>
+      <p>I currently work for <a href="http://www.forrester.com">Forrester Research</a>, designing our client website and mobile apps.</p>
 
-      </div>
-    </main>
+      <p>You can learn more about me on my <a href="#">About</a> page, or on <a href="http://www.linkedin.com/in/chausse">LinkedIn</a>. I also blather on <a href="http://www.twitter.com/jeffchausse">Twitter</a> a whole lot.</p>
 
+    </section>
+    
+    <section class="band home-clients">
+      <h1>Brands I've worked with</h2>
+      <ul class="client-list">
+        <li><img src="assets/img/logos/Forrester.png"></li>
+        <li><img src="assets/img/logos/Harmonix.png"></li>
+        <li><img src="assets/img/logos/HarvardPilgrim.png"></li>
+        <li><img src="assets/img/logos/LibertyMutual.png"></li>
+        <li><img src="assets/img/logos/MFA.png"></li>
+        <li><img src="assets/img/logos/Microsoft.png"></li>
+        <li><img src="assets/img/logos/Simmons.png"></li>
+        <li><img src="assets/img/logos/TJX.png"></li>
+      </ul>
 
-    <div id="about">
-      <div class="content">
-        <h1>About Jeff Chausse</h1>
-        <p><img src="/assets/img/jeff-purple.png" class="profile-image">I've been building online experiences since 1998 – first as a web developer, now as a user experience designer. I've worked in design leadership roles in a variety of environments, including agencies, startups, and video game studios. I'm also a Certified Scrum Product Owner, trained by both Ken Schwaber and Jeff Sutherland, the co-creators of Scrum.</p>
+      </section>
 
-        <p>I currently serve as Principal UX Designer at a Forrester, where I provide both strategic and hands-on design leadership for our client web portal and native mobile applications. </p>
+    <section class="band neutral1 home-posts">
 
-        <p>Among colleagues, I am known for my ability to communicate equally effectively with designers, developers, marketers, and product managers. I believe that great design is at the core of all successful products, and I do everything I can to align all stakeholders toward this goal.</p>
-      </div>
-    </div>
+    <h1>Things I've written</h1>
 
-    {% include footer.html %}
+        {{ content }}
+
+         <ul class="post-list">
+          {% for post in site.posts %}
+             <li>
+               {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+               <span class="post-meta">{{ post.date | date: date_format }}</span>
+               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+             </li>
+          {% endfor %}
+         </ul>
+
+      </section>
+
+  {% include footer.html %}
 
   </body>
 
 </html>
-

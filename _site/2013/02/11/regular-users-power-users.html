@@ -25,8 +25,23 @@
 
   <body>
 
-    <header class="site-header" role="banner">
-<header class="inner"><a href="/"><img src="/assets/img/logo.png"></a></header>`
+        <header class="site-header">
+      <div class="site-logo-lockup">
+        <a href="/"><img class="site-logo" src="/assets/img/logo.svg"></a>
+          <div class="site-title">
+          <div>Jeff</div>
+          <div>Chausse</div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-navbar">
+      <ul>
+        <li><a href="#">Writing</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
   <!--
   JEKYLL STUFF I DON'T KNOW IF I NEED
@@ -75,8 +90,7 @@
 </header>
  
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+    <section class="band">
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <h1 class="post-title" itemprop="name headline">Regular Users, Power Users, and Why Microsoft and Apple Need Two Operating Systems</h1>
 
@@ -135,13 +149,14 @@
 
 </article>
 
-      </div>
-    </main>
+    </section>
 
     <footer> 
-  Five Planes &copy; 2017 Jeff Chausse <br/>
-  Follow <a href="http://www.twitter.com/fiveplanes">@FivePlanes</a> on Twitter
-</footer>      
+  <div>&copy; 2017 Jeff Chausse&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">Colophon</a></div>
+  <div class="footer-logo">
+    <img src="/assets/img/logo.svg"/>
+  <div>
+</footer> 
 
   </body>
 

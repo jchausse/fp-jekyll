@@ -1,17 +1,24 @@
-/* Magic Numbers */
+// Magic Numbers 
 
 $point-base  : 24px;
 $grid-base   : $point-base*3;
 $max-width   : $point-base*100; // 
-$min-width   : $point-base*40; // 320 is smallest mobile screen worth supporting
+$min-width   : 320px; // 320 is smallest mobile screen worth supporting
 $main-margin : $point-base*3;
 
-/* Colors */
+// Breakpoints 
+
+$break-small : 480px;
+$break-large : 900px;
+
+// Colors 
 
 $color-dark1 : #335544; // Green
 $color-dark2 : #584462; // Purple
 $color-dark3 : #A14B41; // Red
 $color-dark4 : #333333; // Off-black
+
+$color-neutral1 :#EFF5EF; 
 
 $color-light1 : #B9DAC8; // Green
 $color-light2 : #CBA8E0; // Purple
@@ -22,34 +29,22 @@ $color-accent2 : #B9DAC8; // Green
 
 $color-white : #FFFFFF;
 
-/* Web fonts */
+// Web Fonts
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-$body-font:    "Lato";
-$heading-font: "Merriweather";
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i);
 
-/* TYPOGRAPHY */
+@mixin font-serif    { font-family: "Crimson Text" }
+@mixin font-sans { font-family: "Lato" }
 
-/* Sizes */
+// TYPOGRAPHY
 
-@mixin size-tiny    { font-size: $point-base * 0.5   ; line-height: $point-base; margin-top: $point-base; margin-bottom: $point-base; }
-@mixin size-small   { font-size: $point-base * (2/3) ; line-height: $point-base; margin-top: $point-base; margin-bottom: $point-base; }
-@mixin size-large   { font-size: $point-base * 1.25  ; line-height: $point-base * 2; margin-top: $point-base; margin-bottom: $point-base; }
+// Sizes
+
+@mixin size-small   { font-size: $point-base * 0.5   ; line-height: $point-base; margin-top: $point-base; margin-bottom: $point-base; }
+@mixin size-medium  { font-size: $point-base * (2/3) ; line-height: $point-base; margin-top: $point-base; margin-bottom: $point-base; }
+@mixin size-large   { font-size: $point-base * 1.0  ;  line-height: $point-base * 1.4; margin-top: $point-base; margin-bottom: $point-base; }
 @mixin size-xlarge  { font-size: $point-base * 1.5   ; line-height: $point-base * 2; margin-top: $point-base; margin-bottom: $point-base; }
 @mixin size-xxlarge { font-size: $point-base * 2.5   ; line-height: $point-base * 3; margin-top: $point-base; margin-bottom: $point-base; }
 
-/* Fonts */
-
-@mixin font-body    { font-family: "Lato" }
-@mixin font-heading { font-family: "Merriweather" }
-
-.size-small   { @include size-tiny; }
-.size-medium  { @include size-small; }
-.size-large   { @include size-large; }
-.size-xlarge  { @include size-xlarge; }
-.size-xxlarge { @include size-xxlarge; }
-
-.font-body    { @include font-body; }
-.font-heading { @include font-heading; }
+@mixin max-out-width { margin-left:auto; margin-right:auto; max-width: 700px;}

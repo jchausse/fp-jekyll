@@ -1,52 +1,11 @@
-/* Magic Numbers */
-/* Colors */
-/* Web fonts */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-/* TYPOGRAPHY */
-/* Sizes */
-/* Fonts */
-.size-small {
-  font-size: 12px;
-  line-height: 24px;
-  margin-top: 24px;
-  margin-bottom: 24px; }
-
-.size-medium {
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 24px;
-  margin-bottom: 24px; }
-
-.size-large {
-  font-size: 30px;
-  line-height: 48px;
-  margin-top: 24px;
-  margin-bottom: 24px; }
-
-.size-xlarge {
-  font-size: 36px;
-  line-height: 48px;
-  margin-top: 24px;
-  margin-bottom: 24px; }
-
-.size-xxlarge {
-  font-size: 60px;
-  line-height: 72px;
-  margin-top: 24px;
-  margin-bottom: 24px; }
-
-.font-body {
-  font-family: "Lato"; }
-
-.font-heading {
-  font-family: "Merriweather"; }
-
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -90,72 +49,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1, h2 {
-  font-family: "Merriweather", sans-serif;
-  font-weight: bold;
-  color: #333333; }
-
-body {
-  background-color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  line-height: 96px;
-  color: #333333; }
-
-h1 {
-  font-size: 44px;
-  line-height: 168px;
-  color: #333333;
-  margin-bottom: 72px; }
-
-h2 {
-  font-size: 96px;
-  line-height: 120px; }
-
-/* Homepage Only */
-ul.post-list {
-  margin-top: 48px; }
-
-.post-meta {
-  font-size: 14px;
-  line-height: 48px;
-  color: #335544; }
-
-a.post-link {
-  display: block;
-  font-weight: bold;
-  font-size: 24px; }
-
-header.site-header {
-  background-color: #335544;
-  padding: 0 72px;
-  margin-bottom: 96px; }
-
-header.inner {
-  max-width: 2400px;
-  min-width: 960px;
-  text-align: left;
-  margin: auto;
-  height: 96px;
-  color: #fff; }
-
-header.inner a {
-  color: #fff; }
-
-header img {
-  height: 96px;
-  margin-top: 48px; }
-
-a {
-  color: #A14B41;
-  text-decoration: none; }
-
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: 700; }
-
 article time {
   margin-bottom: 96px;
   font-size: 48px;
@@ -163,7 +56,7 @@ article time {
   color: #335544;
   display: block;
   line-height: 72px;
-  font-family: "Merriweather"; }
+  font-family: "Lato"; }
 
 p {
   margin: 72px 0; }
@@ -194,8 +87,11 @@ blockquote *:last-child {
 .page-content {
   max-width: 2400px;
   margin: 0 auto;
-  min-width: 960px;
+  min-width: 320px;
   padding: 144px 72px; }
+
+.post-title {
+  margin-top: 0; }
 
 .post-image {
   width: 100%;
@@ -206,19 +102,6 @@ blockquote *:last-child {
   /* Center the image within the element */
   margin-bottom: 72px;
   display: block; }
-
-footer {
-  font-size: 48px;
-  padding: 96px 0;
-  background-color: #333333;
-  color: #fff;
-  display: block;
-  text-align: center;
-  line-height: 96px;
-  clear: both; }
-
-footer a {
-  color: #CBA8E0; }
 
 /* from the Minima theme */
 .pageNavigation {
@@ -294,96 +177,454 @@ pre, xmp, plaintext, listing {
 
   #heroImage {
     margin-bottom: 120px; } }
-#heroImage {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 225px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: "Crimson Text";
+  box-sizing: border-box;
+  color: #333; }
+
+body {
+  min-width: 320px;
+  background-color: #335544; }
+
+strong {
+  font-weight: 700; }
+
+a {
+  color: #A14B41;
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato";
+  font-weight: bold; }
+
+section.band {
+  padding: 48px;
+  background-color: #FFFFFF; }
+  @media screen and (max-width: 480px) {
+    section.band {
+      padding: 24px;
+      float: none; } }
+
+section.band > *:first-child {
+  margin-top: 0; }
+
+section.band.light1 {
+  background-color: #B9DAC8; }
+
+section.band.light2 {
+  background-color: #CBA8E0; }
+
+section.band.light3 {
+  background-color: #DABCB9; }
+
+section.band.neutral1 {
+  background-color: #EFF5EF; }
+
+section.band.dark1 {
   background-color: #335544;
-  background-image: url("/assets/img/jet.jpg");
+  color: #B9DAC8; }
+
+section.band.dark2 {
+  background-color: #584462;
+  color: #CBA8E0; }
+
+section.band.dark3 {
+  background-color: #A14B41;
+  color: #DABCB9; }
+
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; }
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; }
+
+h1.page-heading {
+  font-size: 60px;
+  line-height: 72px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+h2.page-heading {
+  font-size: 24px;
+  line-height: 33.6px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.site-header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  background-color: #335544;
+  height: 72px;
+  background-size: 50px 50px; }
+  .site-header .site-logo-lockup {
+    height: 48px;
+    margin-top: 12px;
+    margin-left: 12px;
+    display: inline-block; }
+  .site-header .site-logo {
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    margin-right: 7.2px; }
+  .site-header .site-title {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+    text-align: left;
+    font-family: "Lato";
+    color: #FFFFFF;
+    display: inline-block;
+    float: right;
+    font-size: 20.4px;
+    line-height: 22.8px;
+    letter-spacing: 0.5px;
+    margin-top: 3.12px; }
+
+.site-navbar {
+  border-top: 6px solid #333333;
+  height: 60px;
+  background-color: #46755e;
+  background-size: 50px 50px;
+  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-family: "Lato"; }
+  .site-navbar ul li {
+    display: inline; }
+    .site-navbar ul li a {
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+      font-size: 19.2px;
+      color: #FFF891;
+      text-decoration: none;
+      padding-right: 12px;
+      padding-left: 12px;
+      border-right: 1px #335544 solid; }
+  .site-navbar ul li:last-child a {
+    border-right: 0;
+    padding-right: 0; }
+  .site-navbar ul li:first-child a {
+    padding-left: 0; }
 
-#heroImage .logo {
-  position: absolute;
-  left: 72px;
-  top: 48px;
-  height: 96px; }
-
-#heroImage .content {
+footer {
+  padding: 24px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+  background-color: #335544;
   display: block;
+  text-align: center;
+  font-family: "Lato";
+  color: #FFFFFF; }
+  footer a {
+    color: #FFF891; }
+  footer .footer-logo {
+    text-align: center; }
+    footer .footer-logo img {
+      margin-top: 18px;
+      height: 30px;
+      width: 30px;
+      filter: drop-shadow(5px 5px 5px #222); }
+
+article time {
+  line-height: 72px;
+  color: #335544;
+  display: block;
+  line-height: 72px;
+  font-family: "Crimson Text";
+  font-size: 24px;
+  line-height: 33.6px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
   text-align: center; }
 
-#heroImage h1 {
-  display: block;
-  font-size: 8vw;
-  font-family: "Open Sans";
-  color: #fff;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0; }
+p {
+  margin: 72px 0; }
 
-#heroImage h2 {
-  display: block;
-  font-weight: normal;
-  font-size: 3.2vw;
-  font-family: "Merriweather";
-  color: #FFF891;
-  line-height: 1;
-  margin: 0;
-  padding: 0; }
+ol {
+  list-style-position: outside;
+  margin-left: 96px;
+  text-indent: 48px; }
 
-.post-list li {
-  margin-bottom: 72px;
-  font-family: "Merriweather"; }
+ol li {
+  list-style-type: decimal; }
 
-.post-list li:last-child {
+blockquote {
+  color: #335544;
+  border-left: solid 3px #335544;
+  margin-left: 48px;
+  margin-right: 48px;
+  background-color: #B9DAC8;
+  padding: 48px 72px;
+  font-style: italic; }
+
+blockquote *:first-child {
+  margin-top: 0; }
+
+blockquote *:last-child {
   margin-bottom: 0; }
 
-#about {
-  background-color: #584462;
-  padding: 96px 0; }
-
-#about .content {
+.page-content {
   max-width: 2400px;
   margin: 0 auto;
-  min-width: 960px;
-  padding: 0 72px;
-  color: #CBA8E0;
-  font-size: 48px;
+  min-width: 320px;
+  padding: 144px 72px; }
+
+.post h2, .post h1, .post p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; }
+.post p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+.post h2 {
+  font-size: 24px;
+  line-height: 33.6px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+
+.post-title {
+  margin-top: 0; }
+
+.post-image {
+  width: 100%;
+  height: 576px;
+  object-fit: cover;
+  /* Do not scale the image */
+  object-position: center;
+  /* Center the image within the element */
+  margin-bottom: 72px;
+  display: block; }
+
+/* from the Minima theme */
+.pageNavigation {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; }
+
+.pageNavigation .prev, .pageNavigation .next {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0; }
+
+.pageNavigation .next {
+  text-align: right; }
+
+.pageNavigation .heading {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-bottom: 0;
+  font-weight: bold; }
+
+/** Code formatting */
+pre, code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+
+pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0; }
+
+pre, xmp, plaintext, listing {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0px 1em;
   line-height: 72px; }
 
+/** Large screen embiggening */
 @media only screen and (min-width: 2280px) {
-  #about .content {
-    padding: 0 144px; } }
-#about h1 {
-  color: #CBA8E0;
-  font-size: 72px; }
-
-img.profile-image {
-  float: right;
-  width: 150px;
-  margin: 0 0 24px 24px; }
-
-@media only screen and (max-width: 449px) {
-  #heroImage h1 {
-    font-size: 12vw; }
-
-  #heroImage h2 {
-    font-size: 4.7vw; } }
-@media only screen and (min-width: 450px) {
-  #heroImage {
-    height: 250px; }
+  header.site-header {
+    padding: 0 144px;
+    margin-bottom: 96px;
+    height: 240px; }
 
   #heroImage .logo {
-    height: 144px; } }
-@media only screen and (min-width: 650px) {
+    left: 144px; }
+
+  header.site-header img {
+    height: 144px; }
+
+  .page-content {
+    padding: 0 144px; }
+
+  .pageNavigation {
+    line-height: 96px;
+    font-size: 72px; }
+
+  .pageNavigation .heading {
+    line-height: 72px;
+    font-size: 48px; }
+
   #heroImage {
-    height: 350px; } }
-@media only screen and (min-width: 900px) {
-  #heroImage {
-    height: 400px; } }
+    margin-bottom: 120px; } }
+.post-list {
+  font-family: "Crimson Text";
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; }
+  .post-list .post-meta {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-bottom: 0px; }
+  .post-list a {
+    display: block;
+    font-size: 24px;
+    line-height: 33.6px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: #A14B41;
+    font-weight: bold;
+    margin-top: 0; }
+
+.home-clients {
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  border-width: 1px 0; }
+  .home-clients h1 {
+    text-align: center; }
+  .home-clients .client-list {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    text-align: center; }
+    .home-clients .client-list li {
+      display: inline-block; }
+      .home-clients .client-list li img {
+        width: 150px;
+        padding: 10px; }
+
+.home-intro h1 {
+  color: #335544;
+  font-size: 60px;
+  line-height: 72px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-bottom: 48px;
+  text-align: center; }
+.home-intro p {
+  font-size: 24px;
+  line-height: 30px; }
+.home-intro img.profile-image {
+  float: right;
+  width: 200px;
+  margin: 0 0 24px 24px;
+  border-radius: 50%;
+  padding-top: 6px; }
+
+.home-posts h1 {
+  text-align: center; }
+.home-posts .post-link {
+  font-family: "Lato";
+  font-size: 19.2px;
+  line-height: 26.4px; }
+
+@media only screen and (max-width: 750px) {
+  .home-intro h1 {
+    font-size: 36px;
+    line-height: 48px; } }
+@media only screen and (max-width: 500px) {
+  .home-clients h1, .home-posts h1 {
+    font-size: 24px;
+    line-height: 48px; }
+
+  .home-clients .client-list li img {
+    width: 90px;
+    padding: 5px; }
+
+  .home-intro h1 {
+    font-size: 28.8px;
+    line-height: 36px;
+    margin-bottom: 24px; }
+  .home-intro img.profile-image {
+    width: 120px;
+    margin: 0 0 14px 14px; }
+  .home-intro p {
+    font-size: 21.6px;
+    line-height: 26.4px; } }
 /** Jekyll Syntax highlighting styles */
 .highlight {
   background: #fff; }
