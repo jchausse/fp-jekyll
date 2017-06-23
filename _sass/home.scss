@@ -1,24 +1,29 @@
-@import "reset";
-@import "globals";
-@import "screen";
+// INTRO
 
-.post-list {
-	@include font-serif;
-	@include max-out-width;
+.home-intro {
 
-	.post-meta {
-		@include size-medium;
-		margin-bottom:$point-base *0.0;
+	h1 { color: $color-dark1;
+		@include size-xxlarge;
+		margin-bottom:$point-base * 2;
+		text-align:center;
+	}
+	
+	p {
+		@include size-large;
+		line-height: $point-base * 1.25;
+		margin-bottom: $point-base;
 	}
 
-	a {
-		display:block;
-		@include size-large;
-		color:$color-dark3;
-		font-weight:bold;
-		margin-top:0;
+	img.profile-image { 
+		float:right; 
+		width:200px; 
+		margin:0 0 24px 24px;
+		border-radius: 50%;
+		padding-top: $point-base *.25;
 	}
 }
+
+// CLIENTS
 
 .home-clients {
 	background-color:$color-white;
@@ -27,6 +32,7 @@
 
 	h1 {
 		text-align:center;
+		margin-bottom:$point-base;
 	}
 	.client-list {
 		@include max-out-width;
@@ -41,42 +47,44 @@
 	}
 }
 
-.home-intro {
-
-	h1 { color: $color-dark1;
-		@include size-xxlarge;
-		margin-bottom:$point-base * 2;
-		text-align:center;
-	}
-	p {
-
-		font-size: $point-base * 1;
-		line-height: $point-base * 1.25;
-	}
-
-	img.profile-image { 
-		float:right; 
-		width:200px; 
-		margin:0 0 24px 24px;
-		border-radius: 50%;
-		padding-top: $point-base *.25;
-	}
-}
+// POST LIST
 
 .home-posts {
 
-	h1 {
+	h1 { 
+		text-align:center;
+		margin-bottom:$point-base;
+	}
+	.home-post-list {
+		li {
+			margin-bottom:$point-base;
+		}
+
+		@include max-out-width;
+
+		.post-meta {
+			@include font-serif;
+			@include size-medium;
+		}
+
+		a.post-link {
+			display:block;
+			@include font-sans;
+			@include size-large;
+			color:$color-dark3;
+			font-weight:bold;
+			margin-top:0;
+			line-height: $point-base * 1.1;
+		}
+	}
+	.more-link {
+		display:block;
+		@include size-large;
+		@include font-sans;
+		margin-top:$point-base*2;
 		text-align:center;
 	}
-	.post-link {
-		@include font-sans;
-		font-size: $point-base *.8;
-		line-height: $point-base * 1.1;
-
-	}
-
 }
-
 @media only screen and (max-width: 750px) {
 	.home-intro h1 {
 		font-size: $point-base * 1.5;

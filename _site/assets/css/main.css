@@ -4,183 +4,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700);
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i);
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-article time {
-  margin-bottom: 96px;
-  font-size: 48px;
-  line-height: 72px;
-  color: #335544;
-  display: block;
-  line-height: 72px;
-  font-family: "Lato"; }
-
-p {
-  margin: 72px 0; }
-
-ol {
-  list-style-position: outside;
-  margin-left: 96px;
-  text-indent: 48px; }
-
-ol li {
-  list-style-type: decimal; }
-
-blockquote {
-  color: #335544;
-  border-left: solid 3px #335544;
-  margin-left: 48px;
-  margin-right: 48px;
-  background-color: #B9DAC8;
-  padding: 48px 72px;
-  font-style: italic; }
-
-blockquote *:first-child {
-  margin-top: 0; }
-
-blockquote *:last-child {
-  margin-bottom: 0; }
-
-.page-content {
-  max-width: 2400px;
-  margin: 0 auto;
-  min-width: 320px;
-  padding: 144px 72px; }
-
-.post-title {
-  margin-top: 0; }
-
-.post-image {
-  width: 100%;
-  height: 576px;
-  object-fit: cover;
-  /* Do not scale the image */
-  object-position: center;
-  /* Center the image within the element */
-  margin-bottom: 72px;
-  display: block; }
-
-/* from the Minima theme */
-.pageNavigation {
-  line-height: 72px;
-  font-size: 48px;
-  display: block;
-  width: auto;
-  overflow: hidden; }
-
-.pageNavigation .prev, .pageNavigation .next {
-  display: block;
-  width: 50%;
-  float: left;
-  margin: 1em 0; }
-
-.pageNavigation .next {
-  text-align: right; }
-
-.pageNavigation .heading {
-  line-height: 48px;
-  font-size: 38.4px;
-  font-weight: bold; }
-
-/** Code formatting */
-pre, code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef; }
-
-code {
-  padding: 1px 5px; }
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto; }
-
-pre > code {
-  border: 0;
-  padding-right: 0;
-  padding-left: 0; }
-
-pre, xmp, plaintext, listing {
-  display: block;
-  font-family: monospace;
-  white-space: pre;
-  margin: 1em 0px 1em;
-  line-height: 72px; }
-
-/** Large screen embiggening */
-@media only screen and (min-width: 2280px) {
-  header.site-header {
-    padding: 0 144px;
-    margin-bottom: 96px;
-    height: 240px; }
-
-  #heroImage .logo {
-    left: 144px; }
-
-  header.site-header img {
-    height: 144px; }
-
-  .page-content {
-    padding: 0 144px; }
-
-  .pageNavigation {
-    line-height: 96px;
-    font-size: 72px; }
-
-  .pageNavigation .heading {
-    line-height: 72px;
-    font-size: 48px; }
-
-  #heroImage {
-    margin-bottom: 120px; } }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -242,15 +65,81 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato";
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 24px; }
 
-section.band {
+p {
+  font-size: 24px;
+  line-height: 33.6px;
+  line-height: 30px;
+  margin-bottom: 24px; }
+
+ol {
+  list-style-position: outside;
+  margin-left: 96px;
+  text-indent: 48px; }
+
+ol li {
+  list-style-type: decimal; }
+
+blockquote {
+  color: #335544;
+  border-left: solid 3px #335544;
+  margin-left: 48px;
+  margin-right: 48px;
+  background-color: #B9DAC8;
+  padding: 48px 72px;
+  font-style: italic; }
+
+blockquote *:first-child {
+  margin-top: 0; }
+
+blockquote *:last-child {
+  margin-bottom: 0; }
+
+/** Code formatting */
+pre, code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+
+pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0; }
+
+pre, xmp, plaintext, listing {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0px 1em;
+  line-height: 72px; }
+
+.band {
   padding: 48px;
   background-color: #FFFFFF; }
   @media screen and (max-width: 480px) {
-    section.band {
+    .band {
       padding: 24px;
       float: none; } }
+  .band h1 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px; }
+  .band p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px; }
 
 section.band > *:first-child {
   margin-top: 0; }
@@ -279,35 +168,13 @@ section.band.dark3 {
   background-color: #A14B41;
   color: #DABCB9; }
 
-h1 {
-  font-size: 36px;
-  line-height: 48px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px; }
-
-p {
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px; }
-
 h1.page-heading {
   font-size: 60px;
-  line-height: 72px;
-  margin-top: 24px;
-  margin-bottom: 24px; }
+  line-height: 72px; }
 
 h2.page-heading {
   font-size: 24px;
-  line-height: 33.6px;
-  margin-top: 24px;
-  margin-bottom: 24px; }
+  line-height: 33.6px; }
 
 .site-header {
   margin-left: auto;
@@ -319,7 +186,6 @@ h2.page-heading {
   .site-header .site-logo-lockup {
     height: 48px;
     margin-top: 12px;
-    margin-left: 12px;
     display: inline-block; }
   .site-header .site-logo {
     height: 48px;
@@ -379,8 +245,7 @@ footer {
     footer .footer-logo img {
       margin-top: 18px;
       height: 30px;
-      width: 30px;
-      filter: drop-shadow(5px 5px 5px #222); }
+      width: 30px; }
 
 article time {
   line-height: 72px;
@@ -390,38 +255,10 @@ article time {
   font-family: "Crimson Text";
   font-size: 24px;
   line-height: 33.6px;
-  margin-top: 24px;
-  margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
   text-align: center; }
-
-p {
-  margin: 72px 0; }
-
-ol {
-  list-style-position: outside;
-  margin-left: 96px;
-  text-indent: 48px; }
-
-ol li {
-  list-style-type: decimal; }
-
-blockquote {
-  color: #335544;
-  border-left: solid 3px #335544;
-  margin-left: 48px;
-  margin-right: 48px;
-  background-color: #B9DAC8;
-  padding: 48px 72px;
-  font-style: italic; }
-
-blockquote *:first-child {
-  margin-top: 0; }
-
-blockquote *:last-child {
-  margin-bottom: 0; }
 
 .page-content {
   max-width: 2400px;
@@ -435,14 +272,10 @@ blockquote *:last-child {
   max-width: 700px; }
 .post p {
   font-size: 16px;
-  line-height: 24px;
-  margin-top: 24px;
-  margin-bottom: 24px; }
+  line-height: 24px; }
 .post h2 {
   font-size: 24px;
-  line-height: 33.6px;
-  margin-top: 24px;
-  margin-bottom: 24px; }
+  line-height: 33.6px; }
 
 .post-title {
   margin-top: 0; }
@@ -461,8 +294,6 @@ blockquote *:last-child {
 .pageNavigation {
   font-size: 16px;
   line-height: 24px;
-  margin-top: 24px;
-  margin-bottom: 24px;
   display: block;
   width: auto;
   overflow: hidden;
@@ -482,90 +313,34 @@ blockquote *:last-child {
 .pageNavigation .heading {
   font-size: 16px;
   line-height: 24px;
-  margin-top: 24px;
-  margin-bottom: 24px;
   margin-bottom: 0;
   font-weight: bold; }
 
-/** Code formatting */
-pre, code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef; }
-
-code {
-  padding: 1px 5px; }
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto; }
-
-pre > code {
-  border: 0;
-  padding-right: 0;
-  padding-left: 0; }
-
-pre, xmp, plaintext, listing {
-  display: block;
-  font-family: monospace;
-  white-space: pre;
-  margin: 1em 0px 1em;
-  line-height: 72px; }
-
-/** Large screen embiggening */
-@media only screen and (min-width: 2280px) {
-  header.site-header {
-    padding: 0 144px;
-    margin-bottom: 96px;
-    height: 240px; }
-
-  #heroImage .logo {
-    left: 144px; }
-
-  header.site-header img {
-    height: 144px; }
-
-  .page-content {
-    padding: 0 144px; }
-
-  .pageNavigation {
-    line-height: 96px;
-    font-size: 72px; }
-
-  .pageNavigation .heading {
-    line-height: 72px;
-    font-size: 48px; }
-
-  #heroImage {
-    margin-bottom: 120px; } }
-.post-list {
-  font-family: "Crimson Text";
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px; }
-  .post-list .post-meta {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-bottom: 0px; }
-  .post-list a {
-    display: block;
-    font-size: 24px;
-    line-height: 33.6px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    color: #A14B41;
-    font-weight: bold;
-    margin-top: 0; }
+.home-intro h1 {
+  color: #335544;
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 48px;
+  text-align: center; }
+.home-intro p {
+  font-size: 24px;
+  line-height: 33.6px;
+  line-height: 30px;
+  margin-bottom: 24px; }
+.home-intro img.profile-image {
+  float: right;
+  width: 200px;
+  margin: 0 0 24px 24px;
+  border-radius: 50%;
+  padding-top: 6px; }
 
 .home-clients {
   background-color: #FFFFFF;
   border: 1px solid #ccc;
   border-width: 1px 0; }
   .home-clients h1 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 24px; }
   .home-clients .client-list {
     margin-left: auto;
     margin-right: auto;
@@ -577,30 +352,35 @@ pre, xmp, plaintext, listing {
         width: 150px;
         padding: 10px; }
 
-.home-intro h1 {
-  color: #335544;
-  font-size: 60px;
-  line-height: 72px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-bottom: 48px;
-  text-align: center; }
-.home-intro p {
-  font-size: 24px;
-  line-height: 30px; }
-.home-intro img.profile-image {
-  float: right;
-  width: 200px;
-  margin: 0 0 24px 24px;
-  border-radius: 50%;
-  padding-top: 6px; }
-
 .home-posts h1 {
-  text-align: center; }
-.home-posts .post-link {
+  text-align: center;
+  margin-bottom: 24px; }
+.home-posts .home-post-list {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; }
+  .home-posts .home-post-list li {
+    margin-bottom: 24px; }
+  .home-posts .home-post-list .post-meta {
+    font-family: "Crimson Text";
+    font-size: 16px;
+    line-height: 24px; }
+  .home-posts .home-post-list a.post-link {
+    display: block;
+    font-family: "Lato";
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #A14B41;
+    font-weight: bold;
+    margin-top: 0;
+    line-height: 26.4px; }
+.home-posts .more-link {
+  display: block;
+  font-size: 24px;
+  line-height: 33.6px;
   font-family: "Lato";
-  font-size: 19.2px;
-  line-height: 26.4px; }
+  margin-top: 48px;
+  text-align: center; }
 
 @media only screen and (max-width: 750px) {
   .home-intro h1 {
@@ -625,6 +405,27 @@ pre, xmp, plaintext, listing {
   .home-intro p {
     font-size: 21.6px;
     line-height: 26.4px; } }
+.post-list {
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; }
+  .post-list li {
+    margin-bottom: 24px; }
+  .post-list .post-meta {
+    font-family: "Crimson Text";
+    font-size: 16px;
+    line-height: 24px; }
+  .post-list a.post-link {
+    display: block;
+    font-family: "Lato";
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #A14B41;
+    font-weight: bold;
+    margin-top: 0;
+    line-height: 26.4px; }
+
 /** Jekyll Syntax highlighting styles */
 .highlight {
   background: #fff; }

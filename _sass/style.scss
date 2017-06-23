@@ -1,14 +1,36 @@
-article time { 
-	margin-bottom: $point-base *4; 
-	font-size:2*$point-base; 
-	line-height:$grid-base; 
-	color:$color-dark1;
-	display:block; 
-	line-height:$grid-base;
-	@include font-sans;
+// BASIC TYPOGRAPHY STUFF
+
+html {
+	@include font-serif;
+	box-sizing: border-box;
+	color:#333;
 }
 
-p {margin:$grid-base 0;}
+body {
+	min-width:$min-width;
+	background-color:$color-dark1; // Used for iOS overscroll color
+}
+
+strong {
+	font-weight:700;
+}
+
+a  {
+	color: $color-dark3;
+	text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@include font-sans;
+	font-weight:bold;
+	margin-bottom:$point-base;
+}
+
+p {
+	@include size-large;
+	line-height: $point-base * 1.25;
+	margin-bottom: $point-base;
+}
 
 ol { list-style-position: outside; margin-left:$point-base*4; text-indent:$point-base*2; }
 ol li { list-style-type:decimal; }
@@ -26,12 +48,183 @@ blockquote {
 blockquote *:first-child { margin-top: 0; }
 blockquote *:last-child { margin-bottom: 0; }
 
+/** Code formatting */
+pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
+code { padding: 1px 5px; }
+pre { padding: 8px 12px; overflow-x: auto; }
+pre > code { border: 0; padding-right: 0; padding-left: 0; }
+
+pre, xmp, plaintext, listing {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px 1em;
+    line-height:$point-base * 3;
+}
+
+// BANDS
+
+.band {
+	padding: $point-base *2;
+    background-color: $color-white;
+    // Smaller screen = smaller margins
+	@media screen and (max-width: $break-small) {
+    	padding: $point-base *1;
+    	float: none;
+  	}
+
+  	h1	{
+		@include size-xlarge;
+		@include max-out-width;
+	}
+
+	p	{
+		@include max-out-width;
+	}
+}
+
+section.band > *:first-child {
+	margin-top:0;
+}
+
+section.band.light1 { background-color: $color-light1; }
+section.band.light2 { background-color: $color-light2; }
+section.band.light3 { background-color: $color-light3; }
+
+section.band.neutral1 { background-color: $color-neutral1; }
+
+section.band.dark1 { background-color: $color-dark1; color:$color-light1;}
+section.band.dark2 { background-color: $color-dark2; color:$color-light2;}
+section.band.dark3 { background-color: $color-dark3; color:$color-light3;}
+
+h1.page-heading {
+	@include size-xxlarge;
+}
+
+h2.page-heading {
+	@include size-large;
+}
+
+// SITE HEADER AND NAVBAR
+
+.site-header {
+	@include max-out-width;
+	background-color:$color-dark1;
+	height: 3 * $point-base;
+	background-size: 50px 50px;
+
+	.site-logo-lockup {
+		height: 2 * $point-base;
+		margin-top: $point-base / 2;
+		display: inline-block;
+	}
+	.site-logo {
+		height: 2 *  $point-base;
+		width: 2 *  $point-base;
+		display:inline-block;
+		margin-right: 0.3 *  $point-base;
+	}
+	.site-title {
+    	text-shadow: 1px 1px rgba(0,0,0,0.8);
+		text-align:left;
+		font-family: "Lato";
+		color: $color-white;
+		display:inline-block;
+		float:right;
+		font-size: $point-base * 0.85;
+		line-height: $point-base * .95;
+		letter-spacing: 0.5px;
+
+		margin-top: $point-base *.13;
+
+	}
+}
+
+.site-navbar {
+	border-top: 6px solid $color-dark4;
+	height: $point-base * 2.5;
+	background-color: lighten( $color-dark1, 10% );
+	background-size: 50px 50px;
+	text-align: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	@include font-sans;
+
+	ul {
+		li {
+			display: inline;
+
+			a {
+		    	text-shadow: 1px 1px rgba(0,0,0,0.4);
+				font-size: $point-base * .8;
+				color: $color-accent1;
+				text-decoration: none;
+				padding-right: $point-base * .5;
+				padding-left: $point-base * .5;
+				border-right: 1px $color-dark1 solid;
+			}
+		}
+
+		li:last-child a {
+			border-right: 0;
+			padding-right: 0;
+		}	
+		li:first-child a {
+			padding-left: 0;
+		}
+	}
+}
+
+footer {
+	padding: $point-base;
+   	text-shadow: 1px 1px rgba(0,0,0,0.4);
+	//height: $point-base * 2.5;
+	background-color: $color-dark1;
+	display:block;
+	text-align: center;
+	@include font-sans;
+	color: $color-white;
+	a {
+		color: $color-accent1;
+	}
+
+	.footer-logo {
+		text-align:center;
+		img {
+			margin-top: $point-base *.75;
+			height:30px;
+			width:30px;
+		}
+	}
+}
+
+article time { 
+
+	line-height:$grid-base; 
+	color:$color-dark1;
+	display:block; 
+	line-height:$grid-base;
+	@include font-serif;
+	@include size-large;
+	@include max-out-width;
+	text-align:center;
+}
+
 .page-content {  
 	max-width:$max-width; 
 	margin:0 auto; 
 	min-width:$min-width; 
 	padding: ($point-base * 6) $main-margin;
 } 
+
+.post {
+	h2, h1, p {
+		@include max-out-width;
+	}
+	p { @include size-medium;}
+	h2 { @include size-large;}
+}
 
 .post-title {
 	margin-top:0;
@@ -48,11 +241,11 @@ blockquote *:last-child { margin-bottom: 0; }
 /* from the Minima theme */
 
 .pageNavigation {
-	line-height:$point-base*3;
- 	font-size: $point-base * 2;
+	@include size-medium;
  	display: block;
  	width: auto;
  	overflow: hidden;
+ 	@include max-out-width;
 }
 
 .pageNavigation .prev, .pageNavigation .next {
@@ -67,62 +260,7 @@ blockquote *:last-child { margin-bottom: 0; }
 }
 
 .pageNavigation .heading {
-	line-height:$point-base * 2;
-	font-size:$point-base * 1.6;
+	@include size-medium;
+	margin-bottom:0;
 	font-weight:bold;
 }
-
-/** Code formatting */
-pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
-code { padding: 1px 5px; }
-pre { padding: 8px 12px; overflow-x: auto; }
-pre > code { border: 0; padding-right: 0; padding-left: 0; }
-
-pre, xmp, plaintext, listing {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1em 0px 1em;
-    line-height:$point-base * 3;
-}
-
-/** Large screen embiggening */
-
-@media only screen and (min-width: $point-base * 95) { 
-
-
-	header.site-header {
-		padding: 0 $main-margin*2;
-		margin-bottom:$point-base*4;
-		height:$point-base*10;
-	}
-
-	#heroImage .logo {
-		left:$main-margin*2;
-	}
-
-	header.site-header img {
-		height: $point-base *6;
-	}
-
-	.page-content {  
-		padding: 0 $main-margin*2;
-	} 
-
-	.pageNavigation {
-		line-height:$point-base * 4;
- 		font-size: $point-base * 3;
-	}
-
-	.pageNavigation .heading {
-		line-height:$point-base * 3;
-		font-size:$point-base * 2;
-	}
-
-	#heroImage { 
-		margin-bottom: $point-base * 5;
-	}
-
-}
-
-

@@ -3,21 +3,6 @@
 
   {% include head.html %}
 
-  <!--<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Jeff Chausse | UX Designer</title>
-  <meta name="description" content="Jeff Chausse is a Boston-area User Experience designer with over 15 years experience designing website and mobile apps">
-
-  <link rel="stylesheet" href="assets/css/screen.css">
-  <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="canonical" href="/">
-
-  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
-  </head>-->
-
   <body>
 
     {% include header.html %}
@@ -28,7 +13,7 @@
 
       <p><img src="assets/img/jeff.jpg" class="profile-image">I've been creating web sites and mobile apps for almost 20 years — first as a developer, and now as a user experience designer.</p>
 
-      <p>I’ve worked in a variety of environments, including agencies, startups, and video game studios. <strong>I've seen things</strong>.</p>
+      <p>I’ve worked in a variety of environments, including big companies, agencies, startups, and video game studios. <strong>I've seen things</strong>.</p>
 
       <p>I currently work for <a href="http://www.forrester.com">Forrester Research</a>, designing our client website and mobile apps.</p>
 
@@ -37,7 +22,7 @@
     </section>
     
     <section class="band home-clients">
-      <h1>Brands I've worked with</h2>
+      <h1>Organizations I've worked with</h2>
       <ul class="client-list">
         <li><img src="assets/img/logos/Forrester.png"></li>
         <li><img src="assets/img/logos/Harmonix.png"></li>
@@ -53,12 +38,12 @@
 
     <section class="band neutral1 home-posts">
 
-    <h1>Things I've written</h1>
+    <h1>Recent writings</h1>
 
         {{ content }}
 
-         <ul class="post-list">
-          {% for post in site.posts %}
+         <ul class="home-post-list">
+          {% for post in site.posts limit:3 %}
              <li>
                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
                <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -66,6 +51,8 @@
              </li>
           {% endfor %}
          </ul>
+
+         <a href="/posts" class="more-link">View all</a>
 
       </section>
 

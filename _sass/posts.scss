@@ -1,0 +1,24 @@
+.post-list {
+	margin-top: $point-base * 2;
+	li {
+			margin-bottom:$point-base;
+		}
+
+		@include max-out-width;
+
+		.post-meta {
+			@include font-serif;
+			@include size-medium;
+		}
+
+		a.post-link {
+			display:block;
+			@include font-sans;
+			@include size-large;
+			color:$color-dark3;
+			font-weight:bold;
+			margin-top:0;
+			line-height: $point-base * 1.1;
+		}
+
+}
