@@ -4,7 +4,7 @@
 
 	h1 { color: $color-dark1;
 		@include size-xxlarge;
-		margin-bottom:$point-base * 2;
+		margin-bottom:$point-base;
 		text-align:center;
 	}
 	
@@ -77,13 +77,6 @@
 			line-height: $point-base * 1.1;
 		}
 	}
-	.more-link {
-		display:block;
-		@include size-large;
-		@include font-sans;
-		margin-top:$point-base*2;
-		text-align:center;
-	}
 }
 @media only screen and (max-width: 750px) {
 	.home-intro h1 {
@@ -96,7 +89,7 @@
 
 	.home-clients h1, .home-posts h1 {
 		font-size: $point-base * 1;
-		line-height: $point-base * 2;
+		line-height: $point-base * 1.4;
 	}
 	
 	.home-clients .client-list li img {
@@ -122,4 +115,19 @@
 
 	}
 
+}
+
+div.more-link {
+	margin:$point-base*2 auto $point-base auto;
+	text-align:center;
+
+	a {
+		display:inline-block;
+		@include size-medium;
+		@include font-sans;
+		color: #fff;
+		background-color:$color-dark3;
+		padding: $point-base * 0.3 $point-base;
+		border-radius: 50px;	
+	}	
 }

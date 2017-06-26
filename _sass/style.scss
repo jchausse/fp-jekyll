@@ -65,7 +65,7 @@ pre, xmp, plaintext, listing {
 // BANDS
 
 .band {
-	padding: $point-base *2;
+	padding: $point-base $point-base *2;
     background-color: $color-white;
     // Smaller screen = smaller margins
 	@media screen and (max-width: $break-small) {
@@ -76,6 +76,7 @@ pre, xmp, plaintext, listing {
   	h1	{
 		@include size-xlarge;
 		@include max-out-width;
+		line-height: $point-base * 1.6;
 	}
 
 	p	{
@@ -108,10 +109,17 @@ h2.page-heading {
 // SITE HEADER AND NAVBAR
 
 .site-header {
-	@include max-out-width;
-	background-color:$color-dark1;
 	height: 3 * $point-base;
-	background-size: 50px 50px;
+	padding:0 $point-base * 2;
+	
+	@media screen and (max-width: $break-small) {
+    	padding:0 $point-base *1;
+    	float: none;
+  	}
+
+	.header-content {
+		@include max-out-width;
+	}
 
 	.site-logo-lockup {
 		height: 2 * $point-base;
@@ -222,8 +230,17 @@ article time {
 	h2, h1, p {
 		@include max-out-width;
 	}
-	p { @include size-medium;}
+	p, ol li, ul li { @include size-large;
+
+	@media screen and (max-width: $break-small) {
+    	@include size-medium;
+    	float: none;
+  	}
+
+	}
 	h2 { @include size-large;}
+
+
 }
 
 .post-title {
