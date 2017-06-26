@@ -87,16 +87,6 @@
 
 @media only screen and (max-width: 500px) {
 
-	.home-clients h1, .home-posts h1 {
-		font-size: $point-base * 1;
-		line-height: $point-base * 1.4;
-	}
-	
-	.home-clients .client-list li img {
-		width: 90px;
-		padding: 5px;
-	}
-
 	.home-intro {
 		h1 {
 			font-size: $point-base * 1.2;
@@ -113,6 +103,20 @@
 			line-height: $point-base * 1.1
 		}
 
+	}
+
+	.home-clients h1, .home-posts h1 {
+		font-size: $point-base * 1;
+		line-height: $point-base * 1.4;
+	}
+	
+	.home-clients .client-list li img {
+		width: 90px;
+		padding: 5px;
+	}
+
+	.home-posts .home-post-list a.post-link {
+		@include size-medium;
 	}
 
 }

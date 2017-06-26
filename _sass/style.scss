@@ -65,7 +65,7 @@ pre, xmp, plaintext, listing {
 // BANDS
 
 .band {
-	padding: $point-base $point-base *2;
+	padding: $point-base*2 $point-base*2;
     background-color: $color-white;
     // Smaller screen = smaller margins
 	@media screen and (max-width: $break-small) {

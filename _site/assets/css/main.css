@@ -124,7 +124,7 @@ pre, xmp, plaintext, listing {
   line-height: 72px; }
 
 .band {
-  padding: 24px 48px;
+  padding: 48px 48px;
   background-color: #FFFFFF; }
   @media screen and (max-width: 480px) {
     .band {
@@ -390,14 +390,6 @@ article time {
     font-size: 36px;
     line-height: 48px; } }
 @media only screen and (max-width: 500px) {
-  .home-clients h1, .home-posts h1 {
-    font-size: 24px;
-    line-height: 33.6px; }
-
-  .home-clients .client-list li img {
-    width: 90px;
-    padding: 5px; }
-
   .home-intro h1 {
     font-size: 28.8px;
     line-height: 36px;
@@ -407,7 +399,19 @@ article time {
     margin: 0 0 14px 14px; }
   .home-intro p {
     font-size: 21.6px;
-    line-height: 26.4px; } }
+    line-height: 26.4px; }
+
+  .home-clients h1, .home-posts h1 {
+    font-size: 24px;
+    line-height: 33.6px; }
+
+  .home-clients .client-list li img {
+    width: 90px;
+    padding: 5px; }
+
+  .home-posts .home-post-list a.post-link {
+    font-size: 16px;
+    line-height: 24px; } }
 div.more-link {
   margin: 48px auto 24px auto;
   text-align: center; }
