@@ -230,13 +230,8 @@ article time {
 	h2, h1, p {
 		@include max-out-width;
 	}
-	p, ol li, ul li { @include size-large;
-
-	@media screen and (max-width: $break-small) {
-    	@include size-medium;
-    	float: none;
-  	}
-
+	p, ol li, ul li { 
+		@include size-large;
 	}
 	h2 { @include size-large;}
 

@@ -43,7 +43,7 @@ $color-white : #FFFFFF;
 
 @mixin size-small   { font-size: $point-base * 0.5   ; line-height: $point-base; } //  margin-top: $point-base; margin-bottom: $point-base; }
 @mixin size-medium  { font-size: $point-base * (2/3) ; line-height: $point-base; } // margin-top: $point-base; margin-bottom: $point-base; }
-@mixin size-large   { font-size: $point-base * 1.0  ;  line-height: $point-base * 1.4; } // margin-top: $point-base; margin-bottom: $point-base; }
+@mixin size-large   { font-size: $point-base * 1.0  ;  line-height: $point-base * 1.2; } // margin-top: $point-base; margin-bottom: $point-base; }
 @mixin size-xlarge  { font-size: $point-base * 1.5   ; line-height: $point-base * 2; } // margin-top: $point-base; margin-bottom: $point-base; }
 @mixin size-xxlarge { font-size: $point-base * 2.5   ; line-height: $point-base * 3; } // margin-top: $point-base; margin-bottom: $point-base; }
 

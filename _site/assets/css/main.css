@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 24px;
-  line-height: 33.6px;
+  line-height: 28.8px;
   line-height: 30px;
   margin-bottom: 24px; }
 
@@ -175,7 +175,7 @@ h1.page-heading {
 
 h2.page-heading {
   font-size: 24px;
-  line-height: 33.6px; }
+  line-height: 28.8px; }
 
 .site-header {
   height: 72px;
@@ -259,7 +259,7 @@ article time {
   line-height: 72px;
   font-family: "Crimson Text";
   font-size: 24px;
-  line-height: 33.6px;
+  line-height: 28.8px;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
@@ -277,15 +277,10 @@ article time {
   max-width: 700px; }
 .post p, .post ol li, .post ul li {
   font-size: 24px;
-  line-height: 33.6px; }
-  @media screen and (max-width: 480px) {
-    .post p, .post ol li, .post ul li {
-      font-size: 16px;
-      line-height: 24px;
-      float: none; } }
+  line-height: 28.8px; }
 .post h2 {
   font-size: 24px;
-  line-height: 33.6px; }
+  line-height: 28.8px; }
 
 .post-title {
   margin-top: 0; }
@@ -334,8 +329,7 @@ article time {
   text-align: center; }
 .home-intro p {
   font-size: 24px;
-  line-height: 33.6px;
-  line-height: 30px;
+  line-height: 28.8px;
   margin-bottom: 24px; }
 .home-intro img.profile-image {
   float: right;
@@ -379,7 +373,7 @@ article time {
     display: block;
     font-family: "Lato";
     font-size: 24px;
-    line-height: 33.6px;
+    line-height: 28.8px;
     color: #A14B41;
     font-weight: bold;
     margin-top: 0;
@@ -440,7 +434,7 @@ div.more-link {
     display: block;
     font-family: "Lato";
     font-size: 24px;
-    line-height: 33.6px;
+    line-height: 28.8px;
     color: #A14B41;
     font-weight: bold;
     margin-top: 0;

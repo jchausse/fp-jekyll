@@ -10,7 +10,6 @@
 	
 	p {
 		@include size-large;
-		line-height: $point-base * 1.25;
 		margin-bottom: $point-base;
 	}
 
