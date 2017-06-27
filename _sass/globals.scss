@@ -1,7 +1,6 @@
 // Magic Numbers 
 
 $point-base  : 24px;
-$grid-base   : $point-base*3;
 $max-width   : $point-base*100; // 
 $min-width   : 320px; // 320 is smallest mobile screen worth supporting
 $main-margin : $point-base*3;
@@ -41,10 +40,10 @@ $color-white : #FFFFFF;
 
 // Sizes
 
-@mixin size-small   { font-size: $point-base * 0.5   ; line-height: $point-base; } //  margin-top: $point-base; margin-bottom: $point-base; }
-@mixin size-medium  { font-size: $point-base * (2/3) ; line-height: $point-base; } // margin-top: $point-base; margin-bottom: $point-base; }
-@mixin size-large   { font-size: $point-base * 1.0  ;  line-height: $point-base * 1.2; } // margin-top: $point-base; margin-bottom: $point-base; }
-@mixin size-xlarge  { font-size: $point-base * 1.5   ; line-height: $point-base * 2; } // margin-top: $point-base; margin-bottom: $point-base; }
-@mixin size-xxlarge { font-size: $point-base * 2.5   ; line-height: $point-base * 3; } // margin-top: $point-base; margin-bottom: $point-base; }
+@mixin size-small   { font-size: $point-base * 0.7 ; line-height: $point-base; } 
+@mixin size-medium  { font-size: $point-base * 0.9 ; line-height: $point-base * 1.1; } 
+@mixin size-large   { font-size: $point-base * 1.0 ; line-height: $point-base * 1.2; } 
+@mixin size-xlarge  { font-size: $point-base * 1.5 ; line-height: $point-base * 2; } 
+@mixin size-xxlarge { font-size: $point-base * 2.5 ; line-height: $point-base * 3; }
 
-@mixin max-out-width { margin-left:auto; margin-right:auto; max-width: 700px;}
+@mixin max-out-width { margin-left:auto; margin-right:auto; max-width: 700px;}  

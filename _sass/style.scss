@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	@include size-large;
-	line-height: $point-base * 1.25;
 	margin-bottom: $point-base;
 }
 
@@ -209,10 +208,9 @@ footer {
 
 article time { 
 
-	line-height:$grid-base; 
+	line-height:$point-base; 
 	color:$color-dark1;
 	display:block; 
-	line-height:$grid-base;
 	@include font-serif;
 	@include size-large;
 	@include max-out-width;
@@ -243,10 +241,10 @@ article time {
 }
 
 .post-image { 
-  width:100%; height:$grid-base*8;
+  width:100%; height:$point-base*8;
   object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
-  margin-bottom:$grid-base;
+  margin-bottom:$point-base;
   display:block;
 }
 
@@ -275,4 +273,19 @@ article time {
 	@include size-medium;
 	margin-bottom:0;
 	font-weight:bold;
+}
+
+.round-button {
+	margin:$point-base*2 auto $point-base auto;
+	text-align:center;
+
+	a {
+		display:inline-block;
+		@include size-small;
+		@include font-sans;
+		color: #fff;
+		background-color:$color-dark3;
+		padding: $point-base * 0.3 $point-base;
+		border-radius: 50px;	
+	}	
 }

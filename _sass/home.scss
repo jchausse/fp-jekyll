@@ -4,15 +4,10 @@
 
 	h1 { color: $color-dark1;
 		@include size-xxlarge;
-		margin-bottom:$point-base;
 		text-align:center;
+		margin-bottom: $point-base * 2;
 	}
 	
-	p {
-		@include size-large;
-		margin-bottom: $point-base;
-	}
-
 	img.profile-image { 
 		float:right; 
 		width:200px; 
@@ -20,19 +15,35 @@
 		border-radius: 50%;
 		padding-top: $point-base *.25;
 	}
+
+	@media only screen and (max-width: 600px) {
+		h1 {
+			font-size: $point-base * 1.2;
+			line-height: $point-base * 1.5;
+			margin-bottom: $point-base * 1;
+		}
+		img.profile-image {
+			width: 120px;
+			margin: 0 0 14px 14px;
+		}
+
+		p {
+			@include size-medium;
+		}
+	}
 }
+
 
 // CLIENTS
 
 .home-clients {
-	background-color:$color-white;
 	border: 1px solid #ccc;
 	border-width:1px 0;
 
 	h1 {
 		text-align:center;
-		margin-bottom:$point-base;
 	}
+
 	.client-list {
 		@include max-out-width;
 		text-align:center;
@@ -44,7 +55,20 @@
 			}
 		}
 	}
+
+	@media only screen and (max-width: 600px) {
+		h1 {
+			font-size: $point-base * 1;
+			line-height: $point-base * 1.4;
+		}
+		
+		.client-list li img {
+			width: 120px;
+			padding: 5px;
+		}
+	}
 }
+
 
 // POST LIST
 
@@ -76,61 +100,20 @@
 			line-height: $point-base * 1.1;
 		}
 	}
-}
-@media only screen and (max-width: 750px) {
-	.home-intro h1 {
-		font-size: $point-base * 1.5;
-		line-height: $point-base * 2;
-	}
-}
 
-@media only screen and (max-width: 500px) {
-
-	.home-intro {
+	@media only screen and (max-width: 600px) {
 		h1 {
-			font-size: $point-base * 1.2;
-			line-height: $point-base * 1.5;
-			margin-bottom: $point-base * 1;
-		}
-		img.profile-image {
-			width: 120px;
-			margin: 0 0 14px 14px;
+			font-size: $point-base * 1;
+			line-height: $point-base * 1.4;
 		}
 
-		p {
-			font-size: $point-base * .9;
-			line-height: $point-base * 1.1
+		.home-post-list .post-meta {
+			@include font-serif;
+			@include size-small;
 		}
 
+		.home-post-list a.post-link {
+			@include size-medium;
+		}
 	}
-
-	.home-clients h1, .home-posts h1 {
-		font-size: $point-base * 1;
-		line-height: $point-base * 1.4;
-	}
-	
-	.home-clients .client-list li img {
-		width: 90px;
-		padding: 5px;
-	}
-
-	.home-posts .home-post-list a.post-link {
-		@include size-medium;
-	}
-
-}
-
-div.more-link {
-	margin:$point-base*2 auto $point-base auto;
-	text-align:center;
-
-	a {
-		display:inline-block;
-		@include size-medium;
-		@include font-sans;
-		color: #fff;
-		background-color:$color-dark3;
-		padding: $point-base * 0.3 $point-base;
-		border-radius: 50px;	
-	}	
 }
