@@ -148,7 +148,7 @@ h2.page-heading {
 }
 
 .site-navbar {
-	border-top: 6px solid $color-dark4;
+	border-top: 4px solid $color-dark4;
 	height: $point-base * 2.5;
 	background-color: lighten( $color-dark1, 10% );
 	background-size: 50px 50px;
@@ -186,7 +186,6 @@ h2.page-heading {
 footer {
 	padding: $point-base;
    	text-shadow: 1px 1px rgba(0,0,0,0.4);
-	//height: $point-base * 2.5;
 	background-color: $color-dark1;
 	display:block;
 	text-align: center;

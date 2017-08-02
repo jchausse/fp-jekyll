@@ -4,7 +4,7 @@ title: Things I have written
 permalink: /posts/
 ---
 
-<p> In days of yore, this may have been called a blog. Back in the day, I would blog like nobody's business. Now my writing is much more sporadic, but hopefully more insightful.  Some of it is about UX design. Some of it isn't. I contain multitudes.
+<p> In the good old days, this pile of content may have been called a blog. Back in the day, I would blog like nobody's business. Now my writing is much more sporadic, but hopefully more useful and insightful.  Some of it is about UX design. Some of it isn't. I contain multitudes.
 
 <ul class="post-list">
   {% for post in site.posts %}

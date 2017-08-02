@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 24px;
-  line-height: 28.8px;
+  line-height: 31.2px;
   margin-bottom: 24px; }
 
 ol {
@@ -174,7 +174,7 @@ h1.page-heading {
 
 h2.page-heading {
   font-size: 24px;
-  line-height: 28.8px; }
+  line-height: 31.2px; }
 
 .site-header {
   height: 72px;
@@ -209,7 +209,7 @@ h2.page-heading {
     margin-top: 3.12px; }
 
 .site-navbar {
-  border-top: 6px solid #333333;
+  border-top: 4px solid #333333;
   height: 60px;
   background-color: #46755e;
   background-size: 50px 50px;
@@ -257,7 +257,7 @@ article time {
   display: block;
   font-family: "Crimson Text";
   font-size: 24px;
-  line-height: 28.8px;
+  line-height: 31.2px;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
@@ -275,10 +275,10 @@ article time {
   max-width: 700px; }
 .post p, .post ol li, .post ul li {
   font-size: 24px;
-  line-height: 28.8px; }
+  line-height: 31.2px; }
 .post h2 {
   font-size: 24px;
-  line-height: 28.8px; }
+  line-height: 31.2px; }
 
 .post-title {
   margin-top: 0; }
@@ -389,14 +389,17 @@ article time {
   .home-posts .home-post-list li {
     margin-bottom: 24px; }
   .home-posts .home-post-list .post-meta {
+    color: #335544;
+    display: block;
     font-family: "Crimson Text";
     font-size: 21.6px;
-    line-height: 26.4px; }
+    line-height: 26.4px;
+    margin-bottom: 9.6px; }
   .home-posts .home-post-list a.post-link {
     display: block;
-    font-family: "Lato";
+    font-family: "Crimson Text";
     font-size: 24px;
-    line-height: 28.8px;
+    line-height: 31.2px;
     color: #A14B41;
     font-weight: bold;
     margin-top: 0;
@@ -412,3 +415,27 @@ article time {
   .home-posts .home-post-list a.post-link {
     font-size: 21.6px;
     line-height: 26.4px; } }
+
+.post-list {
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; }
+  .post-list li {
+    margin-bottom: 24px; }
+  .post-list .post-meta {
+    color: #335544;
+    display: block;
+    font-family: "Crimson Text";
+    font-size: 21.6px;
+    line-height: 26.4px;
+    margin-bottom: 9.6px; }
+  .post-list a.post-link {
+    display: block;
+    font-family: "Crimson Text";
+    font-size: 24px;
+    line-height: 31.2px;
+    color: #A14B41;
+    font-weight: bold;
+    margin-top: 0;
+    line-height: 26.4px; }

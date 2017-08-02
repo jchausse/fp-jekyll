@@ -7,13 +7,16 @@
 		@include max-out-width;
 
 		.post-meta {
+			color:$color-dark1;
+			display:block;
 			@include font-serif;
 			@include size-medium;
+			margin-bottom: $point-base *.4;
 		}
 
 		a.post-link {
 			display:block;
-			@include font-sans;
+			@include font-serif;
 			@include size-large;
 			color:$color-dark3;
 			font-weight:bold;
