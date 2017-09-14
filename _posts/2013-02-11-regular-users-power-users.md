@@ -18,7 +18,7 @@ Its all about *contexts*.
 
 In 2009, Google released a video entitled "What is a Browser?" In it, 50 random people on the street were asked, well, "What is a browser?"
 
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/o4MwTvtyrUQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+<iframe src="https://www.youtube.com/embed/o4MwTvtyrUQ?ecver=2" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
 Its easy to laugh at their responses — but for anyone paying attention, this was a huge wake-up call. The average person had a very hard time grasping what computer people consider one of the most basic, fundamental principles of modern computing — that computers run programs called browsers, to access services called search engines, which return results, which lead to web pages, which (hopefully) give you answers you need.
 

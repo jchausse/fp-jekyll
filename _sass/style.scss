@@ -42,10 +42,10 @@ ol { list-style-position: outside; margin-left:$point-base*4; text-indent:$point
 ol li { list-style-type:decimal; }
 
 blockquote { 
-	color:$color-dark1; 
+	@include max-out-width;
+	@include font-sans;
 	border-left: solid 3px $color-dark1; 
-	margin-left:$point-base * 2; 
-	margin-right:$point-base * 2;
+	margin: auto;
 	background-color:$color-light1; 
 	padding:$point-base $point-base;
 	font-style:italic;
@@ -238,12 +238,13 @@ footer {
 article time { 
 
 	line-height:$point-base; 
-	color:$color-dark1;
+	color:$color-neutral2;
 	display:block; 
-	@include font-serif;
-	@include size-large;
+	@include font-sans;
+	@include size-small;
 	@include max-out-width;
-	text-align:center;
+	text-align:left;
+	margin-bottom:$point-base;
 }
 
 .page-content {  
@@ -261,8 +262,12 @@ article time {
 		@include size-medium;
 	}
 	h2 { @include size-large;}
+}
 
-
+.post iframe {
+	margin:$point-base auto $point-base auto;
+	display:block;
+	max-width:100%;
 }
 
 .post-title {
@@ -292,6 +297,11 @@ article time {
  	width: 50%;
  	float: left;
  	margin: 1em 0;
+}
+
+.pageNavigation .prev a, .pageNavigation .next a {
+	display:block;
+	line-height:1.25em;
 }
 
 .pageNavigation .next {

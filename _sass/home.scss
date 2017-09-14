@@ -133,7 +133,7 @@ body.homepage .site-header {
 		@include max-out-width;
 
 		.post-meta {
-			color:#666;
+			color:$color-neutral2;
 			display:block;
 			@include font-sans;
 			@include size-small;

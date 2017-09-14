@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jeff Chausse's Writing
+title: Written by Jeff Chausse
 permalink: /writing/
 ---
 

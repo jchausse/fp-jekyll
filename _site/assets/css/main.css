@@ -88,10 +88,12 @@ ol li {
   list-style-type: decimal; }
 
 blockquote {
-  color: #335544;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  font-family: "Lato";
   border-left: solid 3px #335544;
-  margin-left: 48px;
-  margin-right: 48px;
+  margin: auto;
   background-color: #B9DAC8;
   padding: 24px 24px;
   font-style: italic;
@@ -274,15 +276,16 @@ footer {
 
 article time {
   line-height: 24px;
-  color: #335544;
+  color: #948664;
   display: block;
-  font-family: "Lusitana";
-  font-size: 31.2px;
+  font-family: "Lato";
+  font-size: 16.8px;
   line-height: 1.1em;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
-  text-align: center; }
+  text-align: left;
+  margin-bottom: 24px; }
 
 .page-content {
   max-width: 2400px;
@@ -300,6 +303,11 @@ article time {
 .post h2 {
   font-size: 31.2px;
   line-height: 1.1em; }
+
+.post iframe {
+  margin: 24px auto 24px auto;
+  display: block;
+  max-width: 100%; }
 
 .post-title {
   margin-top: 0; }
@@ -330,6 +338,10 @@ article time {
   width: 50%;
   float: left;
   margin: 1em 0; }
+
+.pageNavigation .prev a, .pageNavigation .next a {
+  display: block;
+  line-height: 1.25em; }
 
 .pageNavigation .next {
   text-align: right; }
@@ -448,7 +460,7 @@ body.homepage .site-header {
     .home-posts .home-post-list li {
       margin-bottom: 36px; }
     .home-posts .home-post-list .post-meta {
-      color: #666;
+      color: #948664;
       display: block;
       font-family: "Lato";
       font-size: 16.8px;
@@ -471,7 +483,7 @@ body.homepage .site-header {
   .post-list li {
     margin-bottom: 36px; }
   .post-list .post-meta {
-    color: #666;
+    color: #948664;
     display: block;
     font-family: "Lato";
     font-size: 16.8px;
