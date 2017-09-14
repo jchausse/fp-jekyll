@@ -54,7 +54,10 @@ html {
 
 body {
   min-width: 320px;
-  background-color: #335544; }
+  background-color: #335544;
+  background-image: url("../img/green_paper_fibers_@2X.png");
+  background-size: 410px 410px;
+  background-color: #F0F2F2; }
 
 strong {
   font-weight: 700; }
@@ -167,7 +170,10 @@ section.band.neutral1 {
 
 section.band.dark1 {
   background-color: #335544;
-  color: #B9DAC8; }
+  color: #B9DAC8;
+  background-image: url("../img/green_paper_fibers_@2X.png");
+  background-size: 410px 410px;
+  background-color: #F0F2F2; }
 
 section.band.dark2 {
   background-color: #584462;
@@ -365,7 +371,8 @@ body.homepage .site-header {
 .home-blurb h1 {
   font-family: "Lusitana";
   font-size: 60px;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  margin-bottom: 0; }
   @media only screen and (max-width: 720px) {
     .home-blurb h1 {
       font-size: 38.4px;
@@ -439,7 +446,7 @@ body.homepage .site-header {
     .home-posts .home-post-list li {
       margin-bottom: 24px; }
     .home-posts .home-post-list .post-meta {
-      color: #335544;
+      color: #222222;
       display: block;
       font-family: "Lusitana";
       font-size: 16.8px;
