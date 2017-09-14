@@ -2,17 +2,23 @@
 
 .home-intro {
 
-	h1 { color: $color-dark1;
-		@include size-xxlarge;
-		text-align:center;
-		margin-bottom: $point-base * 2;
+	background-image:url("../img/paper_fibers_@2X.png");
+	background-size: 410px 410px;
+	background-color: #F0F2F2;
+
+	h1 { color: $color-dark4;
+		@include size-xlarge;
+		line-height:1.3em;
+		text-align:left;
+		margin-bottom: $point-base * 1;
+		@include font-serif;
 	}
 	
 	img.profile-image { 
 		float:right; 
 		width:200px; 
 		margin:0 0 24px 24px;
-		border-radius: 50%;
+		border-radius: 5%;
 		padding-top: $point-base *.25;
 	}
 
@@ -73,6 +79,10 @@
 // POST LIST
 
 .home-posts {
+
+	background-image:url("../img/paper_fibers_@2X.png");
+	background-size: 410px 410px;
+	background-color: #F0F2F2;
 
 	h1 { 
 		text-align:center;

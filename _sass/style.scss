@@ -26,8 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom:$point-base;
 }
 
-p {
-	@include size-large;
+p  {
+	@include size-medium;
 	margin-bottom: $point-base;
 }
 
@@ -40,8 +40,9 @@ blockquote {
 	margin-left:$point-base * 2; 
 	margin-right:$point-base * 2;
 	background-color:$color-light1; 
-	padding:$point-base * 2 $point-base * 3;
+	padding:$point-base $point-base;
 	font-style:italic;
+	margin-bottom: $point-base;
 }
 
 blockquote *:first-child { margin-top: 0; }
@@ -75,7 +76,7 @@ pre, xmp, plaintext, listing {
   	h1	{
 		@include size-xlarge;
 		@include max-out-width;
-		line-height: $point-base * 1.6;
+		line-height: $point-base * 2;
 	}
 
 	p	{
@@ -132,11 +133,11 @@ h2.page-heading {
 		margin-right: 0.3 *  $point-base;
 	}
 	.site-title {
+		display:none;
     	text-shadow: 1px 1px rgba(0,0,0,0.8);
 		text-align:left;
 		font-family: "Lato";
 		color: $color-white;
-		display:inline-block;
 		float:right;
 		font-size: $point-base * 0.85;
 		line-height: $point-base * .95;
@@ -148,10 +149,11 @@ h2.page-heading {
 }
 
 .site-navbar {
-	border-top: 4px solid $color-dark4;
-	height: $point-base * 2.5;
-	background-color: lighten( $color-dark1, 10% );
-	background-size: 50px 50px;
+	height: 3 * $point-base;
+	float:right;
+	/*border-top: 2px solid $color-dark4;*/
+	/*background-color: lighten( $color-dark1, 10% );
+	background-size: 50px 50px;*/
 	text-align: center;
 	display: flex;
     align-items: center;
@@ -159,6 +161,10 @@ h2.page-heading {
 	@include font-sans;
 
 	ul {
+
+		padding:0;
+		font-size:0;
+
 		li {
 			display: inline;
 
@@ -169,7 +175,7 @@ h2.page-heading {
 				text-decoration: none;
 				padding-right: $point-base * .5;
 				padding-left: $point-base * .5;
-				border-right: 1px $color-dark1 solid;
+				border-right: 1px $color-dark4 solid;
 			}
 		}
 
@@ -228,7 +234,7 @@ article time {
 		@include max-out-width;
 	}
 	p, ol li, ul li { 
-		@include size-large;
+		@include size-medium;
 	}
 	h2 { @include size-large;}
 
@@ -275,7 +281,7 @@ article time {
 }
 
 .round-button {
-	margin:$point-base*2 auto $point-base auto;
+	margin:$point-base auto $point-base auto;
 	text-align:center;
 
 	a {

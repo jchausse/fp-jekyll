@@ -1,5 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lusitana:300,300i,400,400i,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700);
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,7 +48,7 @@ table {
   border-spacing: 0; }
 
 html {
-  font-family: "Crimson Text";
+  font-family: "Lusitana";
   box-sizing: border-box;
   color: #333; }
 
@@ -69,8 +69,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 24px; }
 
 p {
-  font-size: 24px;
-  line-height: 31.2px;
+  font-size: 21.6px;
+  line-height: 1.7em;
   margin-bottom: 24px; }
 
 ol {
@@ -87,8 +87,9 @@ blockquote {
   margin-left: 48px;
   margin-right: 48px;
   background-color: #B9DAC8;
-  padding: 48px 72px;
-  font-style: italic; }
+  padding: 24px 24px;
+  font-style: italic;
+  margin-bottom: 24px; }
 
 blockquote *:first-child {
   margin-top: 0; }
@@ -130,12 +131,12 @@ pre, xmp, plaintext, listing {
       padding: 24px;
       float: none; } }
   .band h1 {
-    font-size: 36px;
+    font-size: 38.4px;
     line-height: 48px;
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
-    line-height: 38.4px; }
+    line-height: 48px; }
   .band p {
     margin-left: auto;
     margin-right: auto;
@@ -173,8 +174,8 @@ h1.page-heading {
   line-height: 72px; }
 
 h2.page-heading {
-  font-size: 24px;
-  line-height: 31.2px; }
+  font-size: 31.2px;
+  line-height: 1.5em; }
 
 .site-header {
   height: 72px;
@@ -197,11 +198,11 @@ h2.page-heading {
     display: inline-block;
     margin-right: 7.2px; }
   .site-header .site-title {
+    display: none;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
     text-align: left;
     font-family: "Lato";
     color: #FFFFFF;
-    display: inline-block;
     float: right;
     font-size: 20.4px;
     line-height: 22.8px;
@@ -209,30 +210,34 @@ h2.page-heading {
     margin-top: 3.12px; }
 
 .site-navbar {
-  border-top: 4px solid #333333;
-  height: 60px;
-  background-color: #46755e;
-  background-size: 50px 50px;
+  height: 72px;
+  float: right;
+  /*border-top: 2px solid $color-dark4;*/
+  /*background-color: lighten( $color-dark1, 10% );
+  background-size: 50px 50px;*/
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Lato"; }
-  .site-navbar ul li {
-    display: inline; }
-    .site-navbar ul li a {
-      text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
-      font-size: 19.2px;
-      color: #FFF891;
-      text-decoration: none;
-      padding-right: 12px;
-      padding-left: 12px;
-      border-right: 1px #335544 solid; }
-  .site-navbar ul li:last-child a {
-    border-right: 0;
-    padding-right: 0; }
-  .site-navbar ul li:first-child a {
-    padding-left: 0; }
+  .site-navbar ul {
+    padding: 0;
+    font-size: 0; }
+    .site-navbar ul li {
+      display: inline; }
+      .site-navbar ul li a {
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+        font-size: 19.2px;
+        color: #FFF891;
+        text-decoration: none;
+        padding-right: 12px;
+        padding-left: 12px;
+        border-right: 1px #333333 solid; }
+    .site-navbar ul li:last-child a {
+      border-right: 0;
+      padding-right: 0; }
+    .site-navbar ul li:first-child a {
+      padding-left: 0; }
 
 footer {
   padding: 24px;
@@ -255,9 +260,9 @@ article time {
   line-height: 24px;
   color: #335544;
   display: block;
-  font-family: "Crimson Text";
-  font-size: 24px;
-  line-height: 31.2px;
+  font-family: "Lusitana";
+  font-size: 31.2px;
+  line-height: 1.5em;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
@@ -274,11 +279,11 @@ article time {
   margin-right: auto;
   max-width: 700px; }
 .post p, .post ol li, .post ul li {
-  font-size: 24px;
-  line-height: 31.2px; }
+  font-size: 21.6px;
+  line-height: 1.7em; }
 .post h2 {
-  font-size: 24px;
-  line-height: 31.2px; }
+  font-size: 31.2px;
+  line-height: 1.5em; }
 
 .post-title {
   margin-top: 0; }
@@ -296,7 +301,7 @@ article time {
 /* from the Minima theme */
 .pageNavigation {
   font-size: 21.6px;
-  line-height: 26.4px;
+  line-height: 1.7em;
   display: block;
   width: auto;
   overflow: hidden;
@@ -315,12 +320,12 @@ article time {
 
 .pageNavigation .heading {
   font-size: 21.6px;
-  line-height: 26.4px;
+  line-height: 1.7em;
   margin-bottom: 0;
   font-weight: bold; }
 
 .round-button {
-  margin: 48px auto 24px auto;
+  margin: 24px auto 24px auto;
   text-align: center; }
   .round-button a {
     display: inline-block;
@@ -332,29 +337,35 @@ article time {
     padding: 7.2px 24px;
     border-radius: 50px; }
 
-.home-intro h1 {
-  color: #335544;
-  font-size: 60px;
-  line-height: 72px;
-  text-align: center;
-  margin-bottom: 48px; }
-.home-intro img.profile-image {
-  float: right;
-  width: 200px;
-  margin: 0 0 24px 24px;
-  border-radius: 50%;
-  padding-top: 6px; }
-@media only screen and (max-width: 600px) {
+.home-intro {
+  background-image: url("../img/paper_fibers_@2X.png");
+  background-size: 410px 410px;
+  background-color: #F0F2F2; }
   .home-intro h1 {
-    font-size: 28.8px;
-    line-height: 36px;
-    margin-bottom: 24px; }
+    color: #333333;
+    font-size: 38.4px;
+    line-height: 48px;
+    line-height: 1.3em;
+    text-align: left;
+    margin-bottom: 24px;
+    font-family: "Lusitana"; }
   .home-intro img.profile-image {
-    width: 120px;
-    margin: 0 0 14px 14px; }
-  .home-intro p {
-    font-size: 21.6px;
-    line-height: 26.4px; } }
+    float: right;
+    width: 200px;
+    margin: 0 0 24px 24px;
+    border-radius: 5%;
+    padding-top: 6px; }
+  @media only screen and (max-width: 600px) {
+    .home-intro h1 {
+      font-size: 28.8px;
+      line-height: 36px;
+      margin-bottom: 24px; }
+    .home-intro img.profile-image {
+      width: 120px;
+      margin: 0 0 14px 14px; }
+    .home-intro p {
+      font-size: 21.6px;
+      line-height: 1.7em; } }
 
 .home-clients {
   border: 1px solid #ccc;
@@ -379,42 +390,46 @@ article time {
       width: 120px;
       padding: 5px; } }
 
-.home-posts h1 {
-  text-align: center;
-  margin-bottom: 24px; }
-.home-posts .home-post-list {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px; }
-  .home-posts .home-post-list li {
-    margin-bottom: 24px; }
-  .home-posts .home-post-list .post-meta {
-    color: #335544;
-    display: block;
-    font-family: "Crimson Text";
-    font-size: 21.6px;
-    line-height: 26.4px;
-    margin-bottom: 9.6px; }
-  .home-posts .home-post-list a.post-link {
-    display: block;
-    font-family: "Crimson Text";
-    font-size: 24px;
-    line-height: 31.2px;
-    color: #A14B41;
-    font-weight: bold;
-    margin-top: 0;
-    line-height: 26.4px; }
-@media only screen and (max-width: 600px) {
+.home-posts {
+  background-image: url("../img/paper_fibers_@2X.png");
+  background-size: 410px 410px;
+  background-color: #F0F2F2; }
   .home-posts h1 {
-    font-size: 24px;
-    line-height: 33.6px; }
-  .home-posts .home-post-list .post-meta {
-    font-family: "Crimson Text";
-    font-size: 16.8px;
-    line-height: 24px; }
-  .home-posts .home-post-list a.post-link {
-    font-size: 21.6px;
-    line-height: 26.4px; } }
+    text-align: center;
+    margin-bottom: 24px; }
+  .home-posts .home-post-list {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px; }
+    .home-posts .home-post-list li {
+      margin-bottom: 24px; }
+    .home-posts .home-post-list .post-meta {
+      color: #335544;
+      display: block;
+      font-family: "Lusitana";
+      font-size: 21.6px;
+      line-height: 1.7em;
+      margin-bottom: 9.6px; }
+    .home-posts .home-post-list a.post-link {
+      display: block;
+      font-family: "Lusitana";
+      font-size: 31.2px;
+      line-height: 1.5em;
+      color: #A14B41;
+      font-weight: bold;
+      margin-top: 0;
+      line-height: 26.4px; }
+  @media only screen and (max-width: 600px) {
+    .home-posts h1 {
+      font-size: 24px;
+      line-height: 33.6px; }
+    .home-posts .home-post-list .post-meta {
+      font-family: "Lusitana";
+      font-size: 16.8px;
+      line-height: 24px; }
+    .home-posts .home-post-list a.post-link {
+      font-size: 21.6px;
+      line-height: 1.7em; } }
 
 .post-list {
   margin-top: 48px;
@@ -426,15 +441,15 @@ article time {
   .post-list .post-meta {
     color: #335544;
     display: block;
-    font-family: "Crimson Text";
+    font-family: "Lusitana";
     font-size: 21.6px;
-    line-height: 26.4px;
+    line-height: 1.7em;
     margin-bottom: 9.6px; }
   .post-list a.post-link {
     display: block;
-    font-family: "Crimson Text";
-    font-size: 24px;
-    line-height: 31.2px;
+    font-family: "Lusitana";
+    font-size: 31.2px;
+    line-height: 1.5em;
     color: #A14B41;
     font-weight: bold;
     margin-top: 0;
