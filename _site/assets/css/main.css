@@ -150,7 +150,7 @@ pre, xmp, plaintext, listing {
 section.band > *:first-child {
   margin-top: 0; }
 
-section.band > *:last-child {
+section.band > p:last-child {
   margin-bottom: 0; }
 
 section.band.light1 {
@@ -240,7 +240,7 @@ h2.page-heading {
         text-decoration: none;
         padding-right: 12px;
         padding-left: 12px;
-        border-right: 1px #333333 solid; }
+        border-right: 1px #222222 solid; }
     .site-navbar ul li:last-child a {
       border-right: 0;
       padding-right: 0; }
@@ -349,7 +349,7 @@ body.homepage .site-header {
   padding-top: 24px; }
   @media only screen and (max-width: 720px) {
     body.homepage .site-header {
-      padding-top: 12px; } }
+      padding-top: 6px; } }
   body.homepage .site-header .site-logo {
     height: 72px;
     width: 72px;
@@ -372,14 +372,14 @@ body.homepage .site-header {
       line-height: 1.2em; } }
 @media only screen and (max-width: 720px) {
   .home-blurb {
-    padding-top: 0; } }
+    padding-top: 12px; } }
 
 .home-intro {
   background-image: url("../img/paper_fibers_@2X.png");
   background-size: 410px 410px;
   background-color: #F0F2F2; }
   .home-intro h1 {
-    color: #333333;
+    color: #222222;
     font-size: 38.4px;
     line-height: 1.2em;
     line-height: 1.3em;
@@ -418,7 +418,7 @@ body.homepage .site-header {
       display: inline-block; }
       .home-clients .client-list li img {
         width: 150px;
-        padding: 10px; }
+        padding: 20px; }
   @media only screen and (max-width: 600px) {
     .home-clients .client-list li img {
       width: 120px;
@@ -442,8 +442,8 @@ body.homepage .site-header {
       color: #335544;
       display: block;
       font-family: "Lusitana";
-      font-size: 21.6px;
-      line-height: 1.5em;
+      font-size: 16.8px;
+      line-height: 1.1em;
       margin-bottom: 9.6px; }
     .home-posts .home-post-list a.post-link {
       display: block;

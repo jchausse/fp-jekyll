@@ -1,7 +1,7 @@
 body.homepage .site-header {
 	padding-top: $point-base;
 	@media only screen and (max-width: 720px) {
-		padding-top: $point-base * .5;
+		padding-top: $point-base * .25;
 	}
 
 	.site-logo {
@@ -33,7 +33,7 @@ body.homepage .site-header {
 
 	@media only screen and (max-width: 720px) 
 	{
-		padding-top: 0;
+		padding-top: $point-base*.5;
 	}
 }
 
@@ -96,7 +96,7 @@ body.homepage .site-header {
 			display:inline-block;
 			img {
 				width:150px;
-				padding:10px;
+				padding:20px;
 			}
 		}
 	}
@@ -134,7 +134,7 @@ body.homepage .site-header {
 			color:$color-dark1;
 			display:block;
 			@include font-serif;
-			@include size-medium;
+			@include size-small;
 			margin-bottom: $point-base *.4;
 		}
 

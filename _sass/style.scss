@@ -95,7 +95,7 @@ section.band > *:first-child {
 	margin-top:0;
 }
 
-section.band > *:last-child {
+section.band > p:last-child {
 	margin-bottom:0;
 }
 
@@ -120,6 +120,7 @@ h2.page-heading {
 // SITE HEADER AND NAVBAR
 
 .site-header {
+
 	height: 3 * $point-base;
 	padding:0 $point-base * 2;
 	
