@@ -149,13 +149,4 @@ body.homepage .site-header {
 			margin-top:0;
 		}
 	}
-
-	@media only screen and (max-width: 600px) {
-
-		.home-post-list .post-meta {
-			@include font-serif;
-			@include size-small;
-		}
-
-	}
 }

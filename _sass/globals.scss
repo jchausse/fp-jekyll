@@ -43,7 +43,7 @@ $color-white : #FFFFFF;
 
 @mixin size-small   { font-size: $point-base * 0.7 ; line-height: 1.1em; } 
 @mixin size-medium  { font-size: $point-base * 0.9 ; line-height: 1.5em; } 
-@mixin size-large   { font-size: $point-base * 1.3 ; line-height: 1.2em; } 
+@mixin size-large   { font-size: $point-base * 1.3 ; line-height: 1.1em; } 
 @mixin size-xlarge  { font-size: $point-base * 1.6 ; line-height: 1.2em; } 
 @mixin size-xxlarge { font-size: $point-base * 2.5 ; line-height: 1.2em; }
 

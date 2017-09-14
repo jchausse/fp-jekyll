@@ -148,7 +148,7 @@ pre, xmp, plaintext, listing {
       float: none; }
       .band h1 {
         font-size: 31.2px;
-        line-height: 1.2em;
+        line-height: 1.1em;
         margin-left: auto;
         margin-right: auto;
         max-width: 700px; } }
@@ -192,7 +192,7 @@ h1.page-heading {
 
 h2.page-heading {
   font-size: 31.2px;
-  line-height: 1.2em; }
+  line-height: 1.1em; }
 
 .site-header {
   height: 72px;
@@ -243,7 +243,6 @@ h2.page-heading {
     .site-navbar ul li {
       display: inline; }
       .site-navbar ul li a {
-        text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
         font-size: 19.2px;
         color: #FFF891;
         text-decoration: none;
@@ -279,7 +278,7 @@ article time {
   display: block;
   font-family: "Lusitana";
   font-size: 31.2px;
-  line-height: 1.2em;
+  line-height: 1.1em;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
@@ -300,7 +299,7 @@ article time {
   line-height: 1.5em; }
 .post h2 {
   font-size: 31.2px;
-  line-height: 1.2em; }
+  line-height: 1.1em; }
 
 .post-title {
   margin-top: 0; }
@@ -459,15 +458,10 @@ body.homepage .site-header {
       display: block;
       font-family: "Lusitana";
       font-size: 31.2px;
-      line-height: 1.2em;
+      line-height: 1.1em;
       color: #A14B41;
       font-weight: bold;
       margin-top: 0; }
-  @media only screen and (max-width: 600px) {
-    .home-posts .home-post-list .post-meta {
-      font-family: "Lusitana";
-      font-size: 16.8px;
-      line-height: 1.1em; } }
 
 .post-list {
   margin-top: 48px;
@@ -487,7 +481,7 @@ body.homepage .site-header {
     display: block;
     font-family: "Lusitana";
     font-size: 31.2px;
-    line-height: 1.2em;
+    line-height: 1.1em;
     color: #A14B41;
     font-weight: bold;
     margin-top: 0;
