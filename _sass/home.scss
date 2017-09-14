@@ -27,7 +27,7 @@ body.homepage .site-header {
 		@include font-serif;
 		@include size-xxlarge;
 		margin-bottom:0;
-		
+
 		@media only screen and (max-width: 720px) {
 			@include size-xlarge;
 		}
@@ -135,7 +135,7 @@ body.homepage .site-header {
 		.post-meta {
 			color:$color-dark4;
 			display:block;
-			@include font-serif;
+			@include font-sans;
 			@include size-small;
 			margin-bottom: $point-base *.4;
 		}

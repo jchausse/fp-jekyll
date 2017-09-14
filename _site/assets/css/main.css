@@ -66,6 +66,9 @@ a {
   color: #A14B41;
   text-decoration: none; }
 
+p a, li a, blockquote a {
+  font-weight: bold; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato";
   font-weight: bold;
@@ -448,7 +451,7 @@ body.homepage .site-header {
     .home-posts .home-post-list .post-meta {
       color: #222222;
       display: block;
-      font-family: "Lusitana";
+      font-family: "Lato";
       font-size: 16.8px;
       line-height: 1.1em;
       margin-bottom: 9.6px; }
