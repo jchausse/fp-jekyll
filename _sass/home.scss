@@ -1,7 +1,40 @@
+body.homepage .site-header {
+	padding-top: $point-base;
+	@media only screen and (max-width: 720px) {
+		padding-top: $point-base * .5;
+	}
+
+	.site-logo {
+		height: 3 *  $point-base;
+		width: 3 *  $point-base;
+		display:inline-block;
+		margin-right: 0.3 *  $point-base;
+
+		@media only screen and (max-width: 720px) {
+			height: 2 *  $point-base;
+			width: 2 *  $point-base;
+		}
+	}
+
+	.site-navbar ul li.homelink { display:none; }
+
+}
+
 // BLURB
 
 .home-blurb {
-	padding-top:$point-base*0.5;
+	h1{
+		@include font-serif;
+		@include size-xxlarge;
+		@media only screen and (max-width: 720px) {
+			@include size-xlarge;
+		}
+	} 
+
+	@media only screen and (max-width: 720px) 
+	{
+		padding-top: 0;
+	}
 }
 
 // INTRO

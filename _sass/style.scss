@@ -297,7 +297,7 @@ article time {
 
 	a {
 		display:inline-block;
-		@include size-small;
+		@include size-medium;
 		@include font-sans;
 		color: #fff;
 		background-color:$color-dark3;

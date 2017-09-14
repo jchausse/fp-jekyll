@@ -337,16 +337,42 @@ article time {
   text-align: center; }
   .round-button a {
     display: inline-block;
-    font-size: 16.8px;
-    line-height: 1.1em;
+    font-size: 21.6px;
+    line-height: 1.5em;
     font-family: "Lato";
     color: #fff;
     background-color: #A14B41;
     padding: 7.2px 24px;
     border-radius: 50px; }
 
-.home-blurb {
-  padding-top: 12px; }
+body.homepage .site-header {
+  padding-top: 24px; }
+  @media only screen and (max-width: 720px) {
+    body.homepage .site-header {
+      padding-top: 12px; } }
+  body.homepage .site-header .site-logo {
+    height: 72px;
+    width: 72px;
+    display: inline-block;
+    margin-right: 7.2px; }
+    @media only screen and (max-width: 720px) {
+      body.homepage .site-header .site-logo {
+        height: 48px;
+        width: 48px; } }
+  body.homepage .site-header .site-navbar ul li.homelink {
+    display: none; }
+
+.home-blurb h1 {
+  font-family: "Lusitana";
+  font-size: 60px;
+  line-height: 1.2em; }
+  @media only screen and (max-width: 720px) {
+    .home-blurb h1 {
+      font-size: 38.4px;
+      line-height: 1.2em; } }
+@media only screen and (max-width: 720px) {
+  .home-blurb {
+    padding-top: 0; } }
 
 .home-intro {
   background-image: url("../img/paper_fibers_@2X.png");
