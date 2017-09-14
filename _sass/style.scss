@@ -33,13 +33,18 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom:$point-base;
 }
 
-p  {
+p, ol li, ul li  {
 	@include size-medium;
 	margin-bottom: $point-base;
 }
 
-ol { list-style-position: outside; margin-left:$point-base*4; text-indent:$point-base*2; }
-ol li { list-style-type:decimal; }
+ol, ul { list-style-position: outside; margin-left:$point-base*4; text-indent:0; position:relative; left: $point-base; }
+ol li, ul li { padding-left:$point-base*.5;}
+
+ol li { list-style-type:decimal;}
+ul li { list-style-type:disc;}
+
+
 
 blockquote { 
 	@include max-out-width;
@@ -255,7 +260,7 @@ article time {
 } 
 
 .post {
-	h2, h1, p {
+	h2, h1, p, ol, ul {
 		@include max-out-width;
 	}
 	p, ol li, ul li { 
