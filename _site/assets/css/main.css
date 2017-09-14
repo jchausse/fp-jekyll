@@ -448,7 +448,7 @@ body.homepage .site-header {
     .home-posts .home-post-list li {
       margin-bottom: 36px; }
     .home-posts .home-post-list .post-meta {
-      color: #222222;
+      color: #666;
       display: block;
       font-family: "Lato";
       font-size: 16.8px;
