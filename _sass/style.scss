@@ -65,27 +65,38 @@ pre, xmp, plaintext, listing {
 // BANDS
 
 .band {
-	padding: $point-base*2 $point-base*2;
+	padding: $point-base*1.5 $point-base*1.5;
     background-color: $color-white;
+
     // Smaller screen = smaller margins
-	@media screen and (max-width: $break-small) {
-    	padding: $point-base *1;
-    	float: none;
-  	}
 
   	h1	{
 		@include size-xlarge;
 		@include max-out-width;
-		line-height: $point-base * 2;
 	}
 
 	p	{
 		@include max-out-width;
 	}
+
+	@media screen and (max-width: $break-small) {
+    	padding: $point-base *1;
+    	float: none;
+    	
+    	h1	{
+			@include size-large;
+			@include max-out-width;
+		}
+  	}
+
 }
 
 section.band > *:first-child {
 	margin-top:0;
+}
+
+section.band > *:last-child {
+	margin-bottom:0;
 }
 
 section.band.light1 { background-color: $color-light1; }

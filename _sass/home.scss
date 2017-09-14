@@ -1,3 +1,9 @@
+// BLURB
+
+.home-blurb {
+	padding-top:$point-base*0.5;
+}
+
 // INTRO
 
 .home-intro {
@@ -16,9 +22,9 @@
 	
 	img.profile-image { 
 		float:right; 
-		width:200px; 
-		margin:0 0 24px 24px;
-		border-radius: 5%;
+		width:150px; 
+		margin:0 0 $point-base*1.5 $point-base*1.5;
+		border-radius: 100%;
 		padding-top: $point-base *.25;
 	}
 
@@ -30,7 +36,7 @@
 		}
 		img.profile-image {
 			width: 120px;
-			margin: 0 0 14px 14px;
+			margin: 0 0 $point-base $point-base;
 		}
 
 		p {
@@ -63,10 +69,6 @@
 	}
 
 	@media only screen and (max-width: 600px) {
-		h1 {
-			font-size: $point-base * 1;
-			line-height: $point-base * 1.4;
-		}
 		
 		.client-list li img {
 			width: 120px;
@@ -74,7 +76,6 @@
 		}
 	}
 }
-
 
 // POST LIST
 
@@ -89,6 +90,7 @@
 		margin-bottom:$point-base;
 	}
 	.home-post-list {
+		margin-bottom:$point-base*2;
 		li {
 			margin-bottom:$point-base;
 		}
@@ -110,23 +112,15 @@
 			color:$color-dark3;
 			font-weight:bold;
 			margin-top:0;
-			line-height: $point-base * 1.1;
 		}
 	}
 
 	@media only screen and (max-width: 600px) {
-		h1 {
-			font-size: $point-base * 1;
-			line-height: $point-base * 1.4;
-		}
 
 		.home-post-list .post-meta {
 			@include font-serif;
 			@include size-small;
 		}
 
-		.home-post-list a.post-link {
-			@include size-medium;
-		}
 	}
 }
