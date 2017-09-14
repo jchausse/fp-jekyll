@@ -127,7 +127,7 @@ body.homepage .site-header {
 	.home-post-list {
 		margin-bottom:$point-base*2;
 		li {
-			margin-bottom:$point-base;
+			margin-bottom:$point-base*1.5;
 		}
 
 		@include max-out-width;

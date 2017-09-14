@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Jeff Chausse's blog
-permalink: /blog/
+title: Jeff Chausse's Writing
+permalink: /writing/
 ---
 
-<p>Back in the day, I would blog like nobody's business. Now my writing is much more sporadic, but hopefully more useful and insightful.  Some of it is about UX design. Some of it isn't. I contain multitudes.
+<p>Some of my writing is about UX design. Some of it isn't. I contain multitudes.
 
 <ul class="post-list">
   {% for post in site.posts %}
