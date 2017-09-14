@@ -464,18 +464,18 @@ body.homepage .site-header {
       margin-top: 0; }
 
 .post-list {
-  margin-top: 48px;
+  margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
   max-width: 700px; }
   .post-list li {
-    margin-bottom: 24px; }
+    margin-bottom: 36px; }
   .post-list .post-meta {
-    color: #335544;
+    color: #666;
     display: block;
-    font-family: "Lusitana";
-    font-size: 21.6px;
-    line-height: 1.5em;
+    font-family: "Lato";
+    font-size: 16.8px;
+    line-height: 1.1em;
     margin-bottom: 9.6px; }
   .post-list a.post-link {
     display: block;
@@ -484,5 +484,4 @@ body.homepage .site-header {
     line-height: 1.1em;
     color: #A14B41;
     font-weight: bold;
-    margin-top: 0;
-    line-height: 26.4px; }
+    margin-top: 0; }

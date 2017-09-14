@@ -1,16 +1,16 @@
 .post-list {
-	margin-top: $point-base * 2;
+	margin-top: $point-base;
 	li {
-			margin-bottom:$point-base;
+			margin-bottom:$point-base*1.5;
 		}
 
 		@include max-out-width;
 
 		.post-meta {
-			color:$color-dark1;
+			color:#666;
 			display:block;
-			@include font-serif;
-			@include size-medium;
+			@include font-sans;
+			@include size-small;
 			margin-bottom: $point-base *.4;
 		}
 
@@ -21,7 +21,6 @@
 			color:$color-dark3;
 			font-weight:bold;
 			margin-top:0;
-			line-height: $point-base * 1.1;
 		}
 
 }
