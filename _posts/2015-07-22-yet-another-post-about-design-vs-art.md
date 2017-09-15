@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Yet another post about design vs. art"
+title:  "Yet another article about design vs. art"
 date:   2015-07-22 
 ---
 
 ![Image of Paints and Art Tools](/assets/img/posts/designart.jpg){:class="post-image"}
 
-This is my take on the difference between design and art. There are many like it, but this one is mine.
+This is my thinkpiece on the difference between design and art. There are many like it, but this one is mine.
 
 There are hundreds, if not thousands, of think pieces out there about what is design, and what is art, and how they overlap (or don’t). Can art exist without design? Can design exist without art? Is graphic design art or is it design? Does art have a role in UX design?
 
@@ -21,7 +21,7 @@ This is another way of saying that design is about removing all the things that 
 
 I recently bought a Nissan LEAF electric car. As you can see in the picture below, it has a couple of really funky looking raised headlights.
 
-![Nissan Leaf](/path/to/img.jpg)
+![Nissan Leaf](/assets/img/content/nissanleaf.png){:class="content-image"}
 
 Those funky headlights aren’t purely stylistic. They’re designed to reduce drag over the side mirrors. Both mileage and safety are important to car manufacturers. Since side mirrors can’t be eliminated or made perfectly aerodynamic, a creative designer found a way to use a completely different car part to mitigate one negative impact of their presence.
 
@@ -45,7 +45,8 @@ How design helps art
 
 Artists use design to create art. If art’s goal is to tell a story, the job of design in art is to reduce the friction in getting that story across. The most common design tool in art is technical skill. If you want people to understand the story of Swan Lake, you need to be able to dance. If you want to tell a visual story about the passion of Jesus Christ, it helps to be able to draw an accurate representation of Jesus (or at least of a human being).
 
-![Ecce Homo](/path/to/img.jpg)
+![Ecce Homo](/assets/img/content/eccehomo.png){:class="content-image"}
+<p class="caption"><em>Ecce Homo</em>, a 1930 painting "restored" in 2012 by amateur painter Cecilia Giménez</p>
 
 But art can also make use of clever design decisions unrelated to technical skill. Mark Rothko is famous for extremely simple (looking) paintings containing nothing but large fields of color. There’s little story that this type of painting can tell beyond setting a mood.
 
@@ -62,7 +63,7 @@ I recently came across a Medium post entitled “Well-designed interfaces are bo
 
 Secondly, the primary example author Matthew Ström gives as a boring interface is the Bloomberg Terminal. You know, one of these things:
 
-![Bloomberg Terminal](/path/to/img.jpg)
+![Bloomberg Terminal](/assets/img/content/bloombergterminal.jpg){:class="content-image"}
 
 He’s right that every design aspect of this thing was chosen for a good reason but — I’m sorry — this thing is not boring. Sitting in front of this terminal would make me feel like I’m an all-powerful wizard controlling the universe! That’s a hell of a story that’s going to affect the way I think and act. Based on the reputation of elite Wall Street bankers, I’m pretty sure that’s the desired (and proven) effect.
 
@@ -73,7 +74,8 @@ Lets talk flat design (of course)
 
 Nothing has fired up the art vs. design debate more than the twenty-first century “übertrend” of flat design. Is flat design devoid of art? Is flat design devoid of design? Either way, are we better or worse off?
 
-![Photo of iOS 6 vs. iOS 7](/path/to/img.jpg)
+![Photo of iOS 6 vs. iOS 7](/assets/img/content/ios6v7.jpg){:class="content-image"}
+<p class="caption">iOS 6 vs. iOS7</p>
 
 Well, let’s see how flat design fits into my two definitions of design and art.
 
@@ -87,7 +89,8 @@ Flat design is absolutely an artistic choice and by no means some kind of platon
 
 I believe we exist in an endless cycle of flat vs. intricate design. Some believe intricate-to-flat is a one way street. If so, how did we go from Swiss design to grunge, then back to flat design? Intricate design will be back. There is far too much craft and elegance in graphics like 2010-era OS X icons for their likes never to grace our eyes again.
 
-![Mac Icons 2010](/path/to/img.jpg)
+![Mac Icons 2010](/assets/img/content/macappicons.jpg){:class="content-image"}
+<p class="caption">Mac app icons from 2010</p>
 
 Can’t we all just get along?
 ----------------------------

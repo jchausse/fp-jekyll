@@ -14,6 +14,9 @@ body {
 	background-color: #F0F2F2;
 }
 
+em { 
+	font-style:italic;
+}
 strong {
 	font-weight:700;
 }
@@ -282,6 +285,24 @@ article time {
   margin-bottom:$point-base;
   display:block;
 }
+
+.content-image { 
+  margin:auto;
+  max-width:100%; 
+  margin-bottom:$point-base;
+  display:block;
+}
+
+.post p.caption {
+	text-align:center;
+	margin:$point-base auto;
+	color:$color-neutral2;
+	@include font-sans;
+	@include size-small;
+	display:block;
+	width:100%;
+}
+
 
 /* from the Minima theme */
 

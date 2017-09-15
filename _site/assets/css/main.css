@@ -59,6 +59,9 @@ body {
   background-size: 410px 410px;
   background-color: #F0F2F2; }
 
+em {
+  font-style: italic; }
+
 strong {
   font-weight: 700; }
 
@@ -323,6 +326,22 @@ article time {
   /* Center the image within the element */
   margin-bottom: 24px;
   display: block; }
+
+.content-image {
+  margin: auto;
+  max-width: 100%;
+  margin-bottom: 24px;
+  display: block; }
+
+.post p.caption {
+  text-align: center;
+  margin: 24px auto;
+  color: #948664;
+  font-family: "Lato";
+  font-size: 16.8px;
+  line-height: 1.1em;
+  display: block;
+  width: 100%; }
 
 /* from the Minima theme */
 .pageNavigation {

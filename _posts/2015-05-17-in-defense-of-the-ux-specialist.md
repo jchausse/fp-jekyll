@@ -8,7 +8,7 @@ date:   2015-05-17 16:56:11 -0400
 
 I was recently pilloried on Twitter by a Well-Respected UX Personality for asserting that there is a place on development teams for user experience specialists.
 
-In a particularly ugly bit of this exchange, I was even accused of not understanding basic logic, because while I agreed with him that specialists aren’t always the best person to take on a task in their area of specialization (because not all specialists are highly skilled at their specialty), they usually are.
+In a particularly ugly bit of this exchange, I was even accused by my adversary of not understanding basic logic — because while I agreed with him that specialists aren’t *always* the best person to take on a task in their area of specialization (because not all specialists are highly skilled at their specialty), they *usually* are.
 
 If you tell me that not all dogs have four legs, and I say that dogs usually have four legs, I’m not misunderstanding basic logic — I’m differentiating between the words “all” and “usually”. Not understanding *that* distinction is a sign of not understanding basic logic.
 
@@ -18,7 +18,7 @@ The actual substantive debate with this Well-Respected UX Personality (whom I wi
 
 The platonic ideal of a development team is one in which every member is great at everything that could possibly need to be done. On that team, no matter what comes up, there will always be a resource available to handle it.
 
-Not even my opponent believed this to be realistic, but his idea of a realistic alternative was much closer to the platonic ideal than mine was.
+Not even my opponent believed this to be realistic, but his idea of a realistic compromise was much closer to the platonic ideal than mine was.
 
 Flying, fire-breathing, immortal, solid gold unicorns
 -----------------------------------------------------
@@ -28,12 +28,10 @@ This next bit is specifically about User Experience design specialization, but w
 My opponent’s strident belief is that user experience design responsibilities should be distributed among all members of a development team. I think this is incredibly unrealistic for reasons [his own words](https://medium.com/uie-brain-sparks/help-is-there-a-cardiothoracic-surgeon-in-the-room-a94b7772af7d) should make clear (emphasis mine):
 
 > Our research showed there are core skills [in UX]: **interaction design**, **information architecture**, **user research**, **visual design**, **information design**, **fast iteration management**, **copywriting**, and **editing**. There are also what we call enterprise skills, some of which are: **analytics**, **development methods**, **design-to-development documentation**, **ethnography**, **social networks**, **marketing**, **technology**, **business knowledge**, and **domain knowledge**. […]
+>
+>On the best teams, every team member has a solid foundation in all of these skills.
 
-On the best teams, every team member has a solid foundation in all of these skills.
-
-In the tech world, people who are good at design and development are often referred to as “unicorns” — because they’re exceptionally rare, to the point of possibly being mythical. This line of thinking isn’t advocating for “unicorns”, it’s advocating for flying, fire-breathing, immortal, solid gold unicorns.
-
-Not gold, but totally immortal, flying unicorn
+In the tech world, people who are good at design and development are often referred to as “unicorns” — because they’re exceptionally rare, to the point of possibly being mythical. This line of thinking isn’t advocating for “unicorns”, it’s advocating for *flying, fire-breathing, immortal, solid gold unicorns*.
 
 I absolutely believe that the principles of usability and user-centrism should be understood and shared by all members of a development team — as should other key development principles such as security, performance, accessibility, and maintainability. But there’s a difference between applying principles to your work and performing actual tasks.
 
@@ -58,7 +56,9 @@ Perhaps to avoid any ambiguity between the dictionary definition of “specialis
 
 Specialize.
 
-> Only one who devotes himself to a cause with his whole strength and soul can be a true master. For this reason mastery demands all of a person. — Albert Einstein
+> Only one who devotes himself to a cause with his whole strength and soul can be a true master. For this reason mastery demands all of a person. 
+>
+>— Albert Einstein
 
 Why aren’t baseball or football players interchangeable within a team? Why can’t a shortstop step in and pitch if the pitcher gets injured? The answer is so obvious, it’s feels almost silly to answer: The different skills required for the different positions on a professional sports team require so much specific training that it’s simply impossible to develop expert-level skills for multiple positions simultaneously. There just aren’t enough hours in the day.
 
@@ -77,7 +77,7 @@ Ruby on Rails (arguably the first highly successful full-stack web platform) use
 
 Full-stack developers are very good at finding ways to make one skill solve problems which normally require multiple skills. This is in no way an insult. I’m not saying that they use hammers to drive screws. I’m saying they actually invent hammers which *really can* drive screws. Adapting *problems* to known *solutions* is a brilliant way to reduce complexity. In fact, it’s the whole idea behind the fundamental computer science principle of abstraction. And it’s human nature. We map the unfamiliar to the familiar.
 
-Back to UX design for a second. You’re never going to abstract user studies or wireframing excercises into JavaScript or Ruby. There’s no pre-processor or cross-compiler for that. The actual activities of UX design and coding are completely different. There’s a reason “full-stack development” also doesn’t include sales, marketing, or accounting — aren’t all those things also needed to create a successful product?
+Back to UX design for a second. You’re never going to abstract user studies or wireframing excercises into JavaScript or Ruby. There’s no pre-processor or cross-compiler for that. The actual activities of UX design and coding are completely different. There’s a reason “full-stack development” also doesn’t include sales, marketing, or accounting — but aren’t all those things *also* needed to create a successful product?
 
 ...and what about happiness?
 ----------------------------
@@ -88,7 +88,9 @@ The most interesting people in technology (or in anything, really) are people wh
 
 Shipping product isn’t the ultimate goal in life, people. Shipping product makes money. Having money gives you the freedom to do what you love. If you’re not doing what you love, is it worth being part of a product-shipping machine?
 
-> We don’t make movies to make money, we make money to make more movies. — Walt Disney
+> We don’t make movies to make money, we make money to make more movies. 
+>
+>— Walt Disney
 
 Job titles, roles, and specializations don’t matter for shipping product. But they do matter for acknowledging the unique skills and passions of actual human beings, and for making them feel important, accountable, and appreciated. Maybe wanting that type of appreciation is foolish, but then feel free to call me a fool.
 
