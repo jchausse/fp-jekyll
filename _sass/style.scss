@@ -33,18 +33,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom:$point-base;
 }
 
-p, ol li, ul li  {
+p  {
 	@include size-medium;
 	margin-bottom: $point-base;
 }
-
-ol, ul { list-style-position: outside; margin-left:$point-base*4; text-indent:0; position:relative; left: $point-base; }
-ol li, ul li { padding-left:$point-base*.5;}
-
-ol li { list-style-type:decimal;}
-ul li { list-style-type:disc;}
-
-
 
 blockquote { 
 	@include max-out-width;
@@ -140,7 +132,7 @@ h2.page-heading {
 .site-header {
 
 	height: 3 * $point-base;
-	padding:0 $point-base * 2;
+	padding:0 $point-base * 1.5;
 	
 	@media screen and (max-width: $break-small) {
     	padding:0 $point-base *1;
@@ -204,7 +196,6 @@ h2.page-heading {
 				text-decoration: none;
 				padding-right: $point-base * .5;
 				padding-left: $point-base * .5;
-				border-right: 1px $color-dark4 solid;
 			}
 		}
 
@@ -220,7 +211,6 @@ h2.page-heading {
 
 footer {
 	padding: $point-base;
-   	text-shadow: 1px 1px rgba(0,0,0,0.4);
 	background-color: $color-dark1;
 	display:block;
 	text-align: center;
@@ -267,6 +257,12 @@ article time {
 		@include size-medium;
 	}
 	h2 { @include size-large;}
+
+	ol, ul { list-style-position: outside; margin:auto; text-indent:0; position:relative; left: $point-base; }
+	ol li, ul li { padding-left:$point-base*.5;}
+
+	ol li { list-style-type:decimal;}
+	ul li { list-style-type:disc;}
 }
 
 .post iframe {

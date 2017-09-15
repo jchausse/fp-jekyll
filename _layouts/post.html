@@ -13,12 +13,12 @@ layout: default
     {{ content }}
 
     <div class="pageNavigation">
-  	{% if page.previous.url %}
-    <div class="prev"><div class="heading">Older:</div><a href="{{page.previous.url}}">{{page.previous.title}}</a></div>
-  	{% endif %}
-  	{% if page.next.url %}
-    <div class="next"><div class="heading ">Newer:</div><a href="{{page.next.url}}">{{page.next.title}}</a></div>
- 	{% endif %}
+  	
+    <div class="prev">{% if page.previous.url %}<div class="heading">Older:</div><a href="{{page.previous.url}}">{{page.previous.title}}</a>  {% endif %}</div>
+  
+
+    <div class="next">    {% if page.next.url %}<div class="heading ">Newer:</div><a href="{{page.next.url}}">{{page.next.title}}</a>   {% endif %}</div>
+
 	</div>
 
 </article>
