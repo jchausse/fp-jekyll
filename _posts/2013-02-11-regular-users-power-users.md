@@ -4,6 +4,8 @@ title:  "Regular Users, Power Users, and Why Microsoft and Apple Need Two Operat
 date:   2013-02-11
 ---
 
+![Image of Tablet and Computer](/assets/img/posts/regularusers.jpg){:class="post-image"}
+
 When Apple first announced the iPad, I was skeptical. It seemed like an interesting enough proposition – a specialized, simple computer great for kids, seniors, and people who walk around a lot and occasionally need to look at complicated stuff (e.g. doctors). A great adjunct device, but certainly not something that would replace real computers.
 
 Then, far more quickly than I ever expected, the iPad started becoming way more popular than real computers. OK, I thought, We need to remember that there are a lot more regular people than people like me —who eat, sleep, and breathe computing.

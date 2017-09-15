@@ -4,6 +4,8 @@ title:  "In defense of the UX specialist"
 date:   2015-05-17 16:56:11 -0400
 ---
 
+![Image of Tools](/assets/img/posts/specialist.jpg){:class="post-image"}
+
 I was recently pilloried on Twitter by a Well-Respected UX Personality for asserting that there is a place on development teams for user experience specialists.
 
 In a particularly ugly bit of this exchange, I was even accused of not understanding basic logic, because while I agreed with him that specialists aren’t always the best person to take on a task in their area of specialization (because not all specialists are highly skilled at their specialty), they usually are.

@@ -4,6 +4,8 @@ title:  "The Danger of Redesign"
 date:   2013-01-13
 ---
 
+![Image of Burning Matches](/assets/img/posts/danger.jpg){:class="post-image"}
+
 I just got back from [An Event Apart Boston](http://archive.aneventapart.com/2012/boston/?/2012/boston/) – an amazing experience every year. The presentation that wound up sticking in my head the most was Jared Spool’s – in which he talked about “intuitive experiences”. The intuitiveness of a system is not an absolute property of that system – it is variable based upon the experiences of the system’s user. And if you're not careful, a redesign intended to make things better for everyone can be a disaster for your bottom line.
 
 Complex systems can be intuitive to the right user. My mother certainly couldn’t develop a Ruby on Rails site – but talk to anyone who’s been doing it for a while, and they’ll say Rails is *incredibly* intuitive. It’s all a matter of experience.

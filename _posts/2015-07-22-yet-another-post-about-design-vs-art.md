@@ -4,6 +4,8 @@ title:  "Yet another post about design vs. art"
 date:   2015-07-22 
 ---
 
+![Image of Paints and Art Tools](/assets/img/posts/designart.jpg){:class="post-image"}
+
 This is my take on the difference between design and art. There are many like it, but this one is mine.
 
 There are hundreds, if not thousands, of think pieces out there about what is design, and what is art, and how they overlap (or don’t). Can art exist without design? Can design exist without art? Is graphic design art or is it design? Does art have a role in UX design?

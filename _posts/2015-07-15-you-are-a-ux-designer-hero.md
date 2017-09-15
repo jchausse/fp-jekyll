@@ -3,6 +3,9 @@ layout: post
 title:  "You are a UX designer. You are a hero."
 date:   2015-07-15 16:56:11 -0400
 ---
+
+![Image of Proud Person By Sunset](/assets/img/posts/hero.jpg){:class="post-image"}
+
 Ask me why I love being a user experience designer, and I’ll tell you it's because I enjoy being a hero who saves lives. No, I don’t work in medicine or on devices used by first responders. Right now, I mostly work on a website that helps people read reports online.
 
 But I’m still saving lives. Allow me to explain.

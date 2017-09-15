@@ -4,6 +4,8 @@ title:  "Emotional UX"
 date:   2013-08-15
 ---
 
+![Image of iPhone App User](/assets/img/posts/emotionalux.png){:class="post-image"}
+
 When software first came into the world, technological limitations made for a very low “experience” bar. Software either could do what you needed it to do, or it couldnt. If it required a fifty page manual to explain how to calculate the product of two numbers, then thats just how it was.
 
 With the dawn of the [Macintosh](http://en.wikipedia.org/wiki/Macintosh), “usability” slowly came into vogue and the experience bar was raised. Nowadays its expected that software actually be easy to use. Gone are the fifty page manuals, in are self-describing interfaces with strategically designed virtual [affordances](http://en.wikipedia.org/wiki/Affordance).
