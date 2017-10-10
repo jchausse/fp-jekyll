@@ -1,7 +1,7 @@
 ---
+title: Emotional UX
+date: 2013-08-15 00:00:00 Z
 layout: post
-title:  "Emotional UX"
-date:   2013-08-15
 ---
 
 ![Image of iPhone App User](/assets/img/posts/emotionalux.png){:class="post-image"}

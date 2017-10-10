@@ -1,7 +1,7 @@
 ---
+title: You are a UX designer. You are a hero.
+date: 2015-07-15 20:56:11 Z
 layout: post
-title:  "You are a UX designer. You are a hero."
-date:   2015-07-15 16:56:11 -0400
 ---
 
 ![Image of Proud Person By Sunset](/assets/img/posts/hero.jpg){:class="post-image"}

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Written by Jeff Chausse
-permalink: /writing/
+permalink: "/writing/"
+layout: page
 ---
 
 <p>Some of my writing is about UX design. Some of it isn&rsquo;t. I contain multitudes.

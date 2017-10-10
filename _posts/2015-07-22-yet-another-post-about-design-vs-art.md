@@ -1,7 +1,7 @@
 ---
+title: Yet another article about design vs. art
+date: 2015-07-22 00:00:00 Z
 layout: post
-title:  "Yet another article about design vs. art"
-date:   2015-07-22 
 ---
 
 ![Image of Paints and Art Tools](/assets/img/posts/designart.jpg){:class="post-image"}

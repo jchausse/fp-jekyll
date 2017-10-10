@@ -1,7 +1,8 @@
 ---
+title: Regular Users, Power Users, and Why Microsoft and Apple Need Two Operating
+  Systems
+date: 2013-02-11 00:00:00 Z
 layout: post
-title:  "Regular Users, Power Users, and Why Microsoft and Apple Need Two Operating Systems"
-date:   2013-02-11
 ---
 
 ![Image of Tablet and Computer](/assets/img/posts/regularusers.jpg){:class="post-image"}

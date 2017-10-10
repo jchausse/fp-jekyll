@@ -1,7 +1,7 @@
 ---
+title: In defense of the UX specialist
+date: 2015-05-17 20:56:11 Z
 layout: post
-title:  "In defense of the UX specialist"
-date:   2015-05-17 16:56:11 -0400
 ---
 
 ![Image of Tools](/assets/img/posts/specialist.jpg){:class="post-image"}

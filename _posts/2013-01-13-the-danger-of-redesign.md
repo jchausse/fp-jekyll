@@ -1,7 +1,7 @@
 ---
+title: The Danger of Redesign
+date: 2013-01-13 00:00:00 Z
 layout: post
-title:  "The Danger of Redesign"
-date:   2013-01-13
 ---
 
 ![Image of Burning Matches](/assets/img/posts/danger.jpg){:class="post-image"}

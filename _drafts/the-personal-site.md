@@ -1,7 +1,7 @@
 ---
+title: The personal site
+date: 2017-09-15 00:00:00 Z
 layout: post
-title:  "The personal site"
-date:   2017-09-15 
 ---
 
 ![Image of Paints and Art Tools](/assets/img/posts/designart.jpg){:class="post-image"}

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Contact
-permalink: /contact/
+permalink: "/contact/"
+layout: page
 ---
 
 Email me at: <a href="mailto:jchausse@gmail.com">jchausse@gmail.com</a>
