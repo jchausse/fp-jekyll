@@ -4,7 +4,7 @@ date: 2013-08-15 00:00:00 Z
 layout: post
 ---
 
-![Image of iPhone App User](/assets/img/posts/emotionalux.png){:class="post-image"}
+![Image of woman tying shoes](/uploads/emotionalux.jpg){:class="post-image"}
 
 When software first came into the world, technological limitations made for a very low “experience” bar. Software either could do what you needed it to do, or it couldn't. If it required a fifty page manual to explain how to calculate the product of two numbers, then that's just how it was.
 
