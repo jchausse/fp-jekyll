@@ -4,7 +4,7 @@ permalink: "/writing/"
 layout: page
 ---
 
-<p>Some of my writing is about UX design. Some of it isn&rsquo;t. I contain multitudes.
+<p>Some of my writing is about User Experience design. Some of it isn&rsquo;t. I contain multitudes.
 
 <ul class="post-list">
   {% for post in site.posts %}
