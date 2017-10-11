@@ -6,7 +6,7 @@ layout: post
 
 Test Update
 
-![Image of Paints and Art Tools](/assets/img/posts/designart.jpg){:class="post-image"}
+![Image of Paints and Art Tools](/uploads/designart.jpg){:class="post-image"}
 
 This is my thinkpiece on the difference between design and art. There are many like it, but this one is mine.
 
